@@ -19,6 +19,11 @@ const userNavigation = [
     { name: 'Sign out', href: '#' },
 ]
 
+
+const goTocart = () => {
+    window.location = '/cart';  // redirect to cart page when click on shopping-bag icon in header component
+}
+
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
@@ -64,6 +69,7 @@ const Navbar = ({ content }) => {
                                     <div className="hidden md:block">
                                         <div className="ml-4 flex items-center md:ml-6">
                                             <button
+                                                onClick={goTocart}
                                                 type="button"
                                                 className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                                             >
@@ -156,6 +162,7 @@ const Navbar = ({ content }) => {
                                             <div className="text-sm font-medium leading-none text-gray-400">{user.email}</div>
                                         </div>
                                         <button
+                                            onClick={goTocart}
                                             type="button"
                                             className="relative ml-auto flex-shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                                         >
