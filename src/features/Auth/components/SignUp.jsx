@@ -32,7 +32,7 @@ export default function SignUp() {
 
                 <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
                     <form noValidate className="space-y-4" onSubmit={handleSubmit((data) =>
-                        dispatch(createUserAsync({ email: data.email, password: data.password })))}>
+                        dispatch(createUserAsync({ email: data.email, password: data.password, address: [] })))}>
                         <div>
                             <label htmlFor="email" className="flex text-sm font-medium leading-6 text-gray-900">
                                 Email address

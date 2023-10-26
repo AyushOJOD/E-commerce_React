@@ -11,6 +11,9 @@ import Protected from "./features/Auth/components/Protected";
 import { useDispatch, useSelector } from "react-redux";
 import { selectLoggedInUser } from "./features/Auth/authSlice";
 import { fetchItemsByUserIdAsync } from "./features/Cart/CartSlice";
+import PageNotFound from "./pages/404";
+import OrderSuccess from "./pages/OrderSuccess";
+import UserOrdersPage from "./pages/UserOrdersPage";
 
 const router = createBrowserRouter([
   {
@@ -37,6 +40,18 @@ const router = createBrowserRouter([
     path: "/product-detail/:id",
     element: <Protected children={<ProductDeatilsPage />} />,
   },
+  {
+    path: "/order-success/:id",
+    element: <OrderSuccess />,
+  },
+  {
+    path: "/orders",
+    element: <UserOrdersPage />,
+  },
+  {
+    path: "*",
+    element: <PageNotFound />,
+  },
 ]);
 
 function App() {
@@ -57,3 +72,5 @@ function App() {
 }
 
 export default App;
+
+// TODO: Make a contact page in the backend part

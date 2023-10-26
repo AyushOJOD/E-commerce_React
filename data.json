@@ -2338,22 +2338,71 @@
     {
       "email": "vaibhav@gmail.com",
       "password": "Qwerty@1234",
+      "addresses": [],
       "id": 1
     },
     {
       "email": "ayush@gmail.com",
       "password": "Kumar@1234",
+      "addresses": [
+        {
+          "name": "Ayush Srivastava",
+          "email": "rishiustaad@gmail.com",
+          "phone": "09651661199",
+          "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+          "city": "Jaunpur",
+          "state": "Uttar Pradesh",
+          "pinCode": "222002"
+        }
+      ],
       "id": 2
     },
     {
       "email": "saquib@gmail.com",
       "password": "Saquib@1234",
+      "addresses": [],
       "id": 3
     },
     {
       "email": "demo@gmail.com",
       "password": "Demo@1234",
+      "addresses": [
+        {
+          "name": "Ayush Srivastava",
+          "email": "rishiustaad@gmail.com",
+          "phone": "09651661199",
+          "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+          "city": "Jaunpur",
+          "state": "Uttar Pradesh",
+          "pinCode": "222002"
+        },
+        {
+          "name": "Vaibhav Verma ",
+          "email": "vaibhav@gmail.com",
+          "phone": "6202355855",
+          "street": "wall street",
+          "city": "bhopal",
+          "state": "MP",
+          "pinCode": "4698458"
+        }
+      ],
       "id": 4
+    },
+    {
+      "email": "demo1@gmail.com",
+      "password": "Demo1@1234",
+      "addresses": [
+        {
+          "name": "Ayush Srivastava",
+          "email": "rishiustaad@gmail.com",
+          "phone": "09651661199",
+          "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+          "city": "Jaunpur",
+          "state": "Uttar Pradesh",
+          "pinCode": "222002"
+        }
+      ],
+      "id": 5
     }
   ],
   "cart": [
@@ -2375,67 +2424,6 @@
       "user": 3
     },
     {
-      "id": 6,
-      "title": "MacBook Pro",
-      "description": "MacBook Pro 2021 with mini-LED display may launch between September, November",
-      "price": 1749,
-      "discountPercentage": 11.02,
-      "rating": 4.57,
-      "stock": 83,
-      "brand": "Apple",
-      "category": "laptops",
-      "thumbnail": "https://i.dummyjson.com/data/products/6/thumbnail.png",
-      "images": [
-        "https://i.dummyjson.com/data/products/6/1.png",
-        "https://i.dummyjson.com/data/products/6/2.jpg",
-        "https://i.dummyjson.com/data/products/6/3.png",
-        "https://i.dummyjson.com/data/products/6/4.jpg"
-      ],
-      "quantity": 2,
-      "user": 4
-    },
-    {
-      "id": 10,
-      "title": "HP Pavilion 15-DK1056WM",
-      "description": "HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10",
-      "price": 1099,
-      "discountPercentage": 6.18,
-      "rating": 4.43,
-      "stock": 89,
-      "brand": "HP Pavilion",
-      "category": "laptops",
-      "thumbnail": "https://i.dummyjson.com/data/products/10/thumbnail.jpeg",
-      "images": [
-        "https://i.dummyjson.com/data/products/10/1.jpg",
-        "https://i.dummyjson.com/data/products/10/2.jpg",
-        "https://i.dummyjson.com/data/products/10/3.jpg",
-        "https://i.dummyjson.com/data/products/10/thumbnail.jpeg"
-      ],
-      "quantity": 1,
-      "user": 4
-    },
-    {
-      "id": 16,
-      "title": "Hyaluronic Acid Serum",
-      "description": "L'OrÃ©al Paris introduces Hyaluron Expert Replumping Serum formulated with 1.5% Hyaluronic Acid",
-      "price": 19,
-      "discountPercentage": 13.31,
-      "rating": 4.83,
-      "stock": 110,
-      "brand": "L'Oreal Paris",
-      "category": "skincare",
-      "thumbnail": "https://i.dummyjson.com/data/products/16/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/16/1.png",
-        "https://i.dummyjson.com/data/products/16/2.webp",
-        "https://i.dummyjson.com/data/products/16/3.jpg",
-        "https://i.dummyjson.com/data/products/16/4.jpg",
-        "https://i.dummyjson.com/data/products/16/thumbnail.jpg"
-      ],
-      "quantity": 1,
-      "user": 4
-    },
-    {
       "id": 4,
       "title": "OPPOF19",
       "description": "OPPO F19 is officially announced on April 2021.",
@@ -2455,6 +2443,3147 @@
       ],
       "quantity": 1,
       "user": 1
+    },
+    {
+      "id": 7,
+      "title": "Samsung Galaxy Book",
+      "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
+      "price": 1499,
+      "discountPercentage": 4.15,
+      "rating": 4.25,
+      "stock": 50,
+      "brand": "Samsung",
+      "category": "laptops",
+      "thumbnail": "https://i.dummyjson.com/data/products/7/thumbnail.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/7/1.jpg",
+        "https://i.dummyjson.com/data/products/7/2.jpg",
+        "https://i.dummyjson.com/data/products/7/3.jpg",
+        "https://i.dummyjson.com/data/products/7/thumbnail.jpg"
+      ],
+      "quantity": 1,
+      "user": 3
+    },
+    {
+      "title": "Microsoft Surface Laptop 4",
+      "description": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
+      "price": 1499,
+      "discountPercentage": 10.23,
+      "rating": 4.43,
+      "stock": 68,
+      "brand": "Microsoft Surface",
+      "category": "laptops",
+      "thumbnail": "https://i.dummyjson.com/data/products/8/thumbnail.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/8/1.jpg",
+        "https://i.dummyjson.com/data/products/8/2.jpg",
+        "https://i.dummyjson.com/data/products/8/3.jpg",
+        "https://i.dummyjson.com/data/products/8/4.jpg",
+        "https://i.dummyjson.com/data/products/8/thumbnail.jpg"
+      ],
+      "quantity": 1,
+      "user": 3,
+      "id": 11
+    },
+    {
+      "title": "OPPOF19",
+      "description": "OPPO F19 is officially announced on April 2021.",
+      "price": 280,
+      "discountPercentage": 17.91,
+      "rating": 4.3,
+      "stock": 123,
+      "brand": "OPPO",
+      "category": "smartphones",
+      "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/4/1.jpg",
+        "https://i.dummyjson.com/data/products/4/2.jpg",
+        "https://i.dummyjson.com/data/products/4/3.jpg",
+        "https://i.dummyjson.com/data/products/4/4.jpg",
+        "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+      ],
+      "quantity": 1,
+      "user": 3,
+      "id": 12
+    }
+  ],
+  "order": [
+    {
+      "items": [
+        {
+          "id": 10,
+          "title": "HP Pavilion 15-DK1056WM",
+          "description": "HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10",
+          "price": 1099,
+          "discountPercentage": 6.18,
+          "rating": 4.43,
+          "stock": 89,
+          "brand": "HP Pavilion",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/10/thumbnail.jpeg",
+          "images": [
+            "https://i.dummyjson.com/data/products/10/1.jpg",
+            "https://i.dummyjson.com/data/products/10/2.jpg",
+            "https://i.dummyjson.com/data/products/10/3.jpg",
+            "https://i.dummyjson.com/data/products/10/thumbnail.jpeg"
+          ],
+          "quantity": 2,
+          "user": 4
+        },
+        {
+          "title": "Microsoft Surface Laptop 4",
+          "description": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
+          "price": 1499,
+          "discountPercentage": 10.23,
+          "rating": 4.43,
+          "stock": 68,
+          "brand": "Microsoft Surface",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/8/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/8/1.jpg",
+            "https://i.dummyjson.com/data/products/8/2.jpg",
+            "https://i.dummyjson.com/data/products/8/3.jpg",
+            "https://i.dummyjson.com/data/products/8/4.jpg",
+            "https://i.dummyjson.com/data/products/8/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 13
+        },
+        {
+          "title": "iPhone X",
+          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+          "price": 899,
+          "discountPercentage": 17.94,
+          "rating": 4.44,
+          "stock": 34,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/2/1.jpg",
+            "https://i.dummyjson.com/data/products/2/2.jpg",
+            "https://i.dummyjson.com/data/products/2/3.jpg",
+            "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 14
+        }
+      ],
+      "totalItems": 4,
+      "totalAmount": 4596,
+      "user": {
+        "email": "demo@gmail.com",
+        "password": "Demo@1234",
+        "addresses": [
+          {
+            "name": "Ayush Srivastava",
+            "email": "rishiustaad@gmail.com",
+            "phone": "09651661199",
+            "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+            "city": "Jaunpur",
+            "state": "Uttar Pradesh",
+            "pinCode": "222002"
+          },
+          {
+            "name": "Vaibhav Verma ",
+            "email": "vaibhav@gmail.com",
+            "phone": "6202355855",
+            "street": "wall street",
+            "city": "bhopal",
+            "state": "MP",
+            "pinCode": "4698458"
+          }
+        ],
+        "id": 4
+      },
+      "paymentMethod": "Cash",
+      "id": 1
+    },
+    {
+      "items": [
+        {
+          "id": 10,
+          "title": "HP Pavilion 15-DK1056WM",
+          "description": "HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10",
+          "price": 1099,
+          "discountPercentage": 6.18,
+          "rating": 4.43,
+          "stock": 89,
+          "brand": "HP Pavilion",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/10/thumbnail.jpeg",
+          "images": [
+            "https://i.dummyjson.com/data/products/10/1.jpg",
+            "https://i.dummyjson.com/data/products/10/2.jpg",
+            "https://i.dummyjson.com/data/products/10/3.jpg",
+            "https://i.dummyjson.com/data/products/10/thumbnail.jpeg"
+          ],
+          "quantity": 2,
+          "user": 4
+        },
+        {
+          "title": "Microsoft Surface Laptop 4",
+          "description": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
+          "price": 1499,
+          "discountPercentage": 10.23,
+          "rating": 4.43,
+          "stock": 68,
+          "brand": "Microsoft Surface",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/8/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/8/1.jpg",
+            "https://i.dummyjson.com/data/products/8/2.jpg",
+            "https://i.dummyjson.com/data/products/8/3.jpg",
+            "https://i.dummyjson.com/data/products/8/4.jpg",
+            "https://i.dummyjson.com/data/products/8/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 13
+        },
+        {
+          "title": "iPhone X",
+          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+          "price": 899,
+          "discountPercentage": 17.94,
+          "rating": 4.44,
+          "stock": 34,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/2/1.jpg",
+            "https://i.dummyjson.com/data/products/2/2.jpg",
+            "https://i.dummyjson.com/data/products/2/3.jpg",
+            "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 14
+        }
+      ],
+      "totalItems": 4,
+      "totalAmount": 4596,
+      "user": {
+        "email": "demo@gmail.com",
+        "password": "Demo@1234",
+        "addresses": [
+          {
+            "name": "Ayush Srivastava",
+            "email": "rishiustaad@gmail.com",
+            "phone": "09651661199",
+            "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+            "city": "Jaunpur",
+            "state": "Uttar Pradesh",
+            "pinCode": "222002"
+          },
+          {
+            "name": "Vaibhav Verma ",
+            "email": "vaibhav@gmail.com",
+            "phone": "6202355855",
+            "street": "wall street",
+            "city": "bhopal",
+            "state": "MP",
+            "pinCode": "4698458"
+          }
+        ],
+        "id": 4
+      },
+      "paymentMethod": "Cash",
+      "id": 2
+    },
+    {
+      "items": [
+        {
+          "id": 10,
+          "title": "HP Pavilion 15-DK1056WM",
+          "description": "HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10",
+          "price": 1099,
+          "discountPercentage": 6.18,
+          "rating": 4.43,
+          "stock": 89,
+          "brand": "HP Pavilion",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/10/thumbnail.jpeg",
+          "images": [
+            "https://i.dummyjson.com/data/products/10/1.jpg",
+            "https://i.dummyjson.com/data/products/10/2.jpg",
+            "https://i.dummyjson.com/data/products/10/3.jpg",
+            "https://i.dummyjson.com/data/products/10/thumbnail.jpeg"
+          ],
+          "quantity": 2,
+          "user": 4
+        },
+        {
+          "title": "Microsoft Surface Laptop 4",
+          "description": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
+          "price": 1499,
+          "discountPercentage": 10.23,
+          "rating": 4.43,
+          "stock": 68,
+          "brand": "Microsoft Surface",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/8/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/8/1.jpg",
+            "https://i.dummyjson.com/data/products/8/2.jpg",
+            "https://i.dummyjson.com/data/products/8/3.jpg",
+            "https://i.dummyjson.com/data/products/8/4.jpg",
+            "https://i.dummyjson.com/data/products/8/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 13
+        },
+        {
+          "title": "iPhone X",
+          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+          "price": 899,
+          "discountPercentage": 17.94,
+          "rating": 4.44,
+          "stock": 34,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/2/1.jpg",
+            "https://i.dummyjson.com/data/products/2/2.jpg",
+            "https://i.dummyjson.com/data/products/2/3.jpg",
+            "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 14
+        }
+      ],
+      "totalItems": 4,
+      "totalAmount": 4596,
+      "user": {
+        "email": "demo@gmail.com",
+        "password": "Demo@1234",
+        "addresses": [
+          {
+            "name": "Ayush Srivastava",
+            "email": "rishiustaad@gmail.com",
+            "phone": "09651661199",
+            "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+            "city": "Jaunpur",
+            "state": "Uttar Pradesh",
+            "pinCode": "222002"
+          },
+          {
+            "name": "Vaibhav Verma ",
+            "email": "vaibhav@gmail.com",
+            "phone": "6202355855",
+            "street": "wall street",
+            "city": "bhopal",
+            "state": "MP",
+            "pinCode": "4698458"
+          }
+        ],
+        "id": 4
+      },
+      "paymentMethod": "Cash",
+      "id": 3
+    },
+    {
+      "items": [
+        {
+          "id": 10,
+          "title": "HP Pavilion 15-DK1056WM",
+          "description": "HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10",
+          "price": 1099,
+          "discountPercentage": 6.18,
+          "rating": 4.43,
+          "stock": 89,
+          "brand": "HP Pavilion",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/10/thumbnail.jpeg",
+          "images": [
+            "https://i.dummyjson.com/data/products/10/1.jpg",
+            "https://i.dummyjson.com/data/products/10/2.jpg",
+            "https://i.dummyjson.com/data/products/10/3.jpg",
+            "https://i.dummyjson.com/data/products/10/thumbnail.jpeg"
+          ],
+          "quantity": 2,
+          "user": 4
+        },
+        {
+          "title": "Microsoft Surface Laptop 4",
+          "description": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
+          "price": 1499,
+          "discountPercentage": 10.23,
+          "rating": 4.43,
+          "stock": 68,
+          "brand": "Microsoft Surface",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/8/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/8/1.jpg",
+            "https://i.dummyjson.com/data/products/8/2.jpg",
+            "https://i.dummyjson.com/data/products/8/3.jpg",
+            "https://i.dummyjson.com/data/products/8/4.jpg",
+            "https://i.dummyjson.com/data/products/8/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 13
+        },
+        {
+          "title": "iPhone X",
+          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+          "price": 899,
+          "discountPercentage": 17.94,
+          "rating": 4.44,
+          "stock": 34,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/2/1.jpg",
+            "https://i.dummyjson.com/data/products/2/2.jpg",
+            "https://i.dummyjson.com/data/products/2/3.jpg",
+            "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 14
+        }
+      ],
+      "totalItems": 4,
+      "totalAmount": 4596,
+      "user": {
+        "email": "demo@gmail.com",
+        "password": "Demo@1234",
+        "addresses": [
+          {
+            "name": "Ayush Srivastava",
+            "email": "rishiustaad@gmail.com",
+            "phone": "09651661199",
+            "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+            "city": "Jaunpur",
+            "state": "Uttar Pradesh",
+            "pinCode": "222002"
+          },
+          {
+            "name": "Vaibhav Verma ",
+            "email": "vaibhav@gmail.com",
+            "phone": "6202355855",
+            "street": "wall street",
+            "city": "bhopal",
+            "state": "MP",
+            "pinCode": "4698458"
+          }
+        ],
+        "id": 4
+      },
+      "paymentMethod": "Cash",
+      "selectedAddress": null,
+      "id": 4
+    },
+    {
+      "items": [
+        {
+          "id": 10,
+          "title": "HP Pavilion 15-DK1056WM",
+          "description": "HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10",
+          "price": 1099,
+          "discountPercentage": 6.18,
+          "rating": 4.43,
+          "stock": 89,
+          "brand": "HP Pavilion",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/10/thumbnail.jpeg",
+          "images": [
+            "https://i.dummyjson.com/data/products/10/1.jpg",
+            "https://i.dummyjson.com/data/products/10/2.jpg",
+            "https://i.dummyjson.com/data/products/10/3.jpg",
+            "https://i.dummyjson.com/data/products/10/thumbnail.jpeg"
+          ],
+          "quantity": 2,
+          "user": 4
+        },
+        {
+          "title": "Microsoft Surface Laptop 4",
+          "description": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
+          "price": 1499,
+          "discountPercentage": 10.23,
+          "rating": 4.43,
+          "stock": 68,
+          "brand": "Microsoft Surface",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/8/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/8/1.jpg",
+            "https://i.dummyjson.com/data/products/8/2.jpg",
+            "https://i.dummyjson.com/data/products/8/3.jpg",
+            "https://i.dummyjson.com/data/products/8/4.jpg",
+            "https://i.dummyjson.com/data/products/8/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 13
+        },
+        {
+          "title": "iPhone X",
+          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+          "price": 899,
+          "discountPercentage": 17.94,
+          "rating": 4.44,
+          "stock": 34,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/2/1.jpg",
+            "https://i.dummyjson.com/data/products/2/2.jpg",
+            "https://i.dummyjson.com/data/products/2/3.jpg",
+            "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 14
+        }
+      ],
+      "totalItems": 4,
+      "totalAmount": 4596,
+      "user": {
+        "email": "demo@gmail.com",
+        "password": "Demo@1234",
+        "addresses": [
+          {
+            "name": "Ayush Srivastava",
+            "email": "rishiustaad@gmail.com",
+            "phone": "09651661199",
+            "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+            "city": "Jaunpur",
+            "state": "Uttar Pradesh",
+            "pinCode": "222002"
+          },
+          {
+            "name": "Vaibhav Verma ",
+            "email": "vaibhav@gmail.com",
+            "phone": "6202355855",
+            "street": "wall street",
+            "city": "bhopal",
+            "state": "MP",
+            "pinCode": "4698458"
+          }
+        ],
+        "id": 4
+      },
+      "paymentMethod": "Card",
+      "id": 5
+    },
+    {
+      "items": [
+        {
+          "id": 10,
+          "title": "HP Pavilion 15-DK1056WM",
+          "description": "HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10",
+          "price": 1099,
+          "discountPercentage": 6.18,
+          "rating": 4.43,
+          "stock": 89,
+          "brand": "HP Pavilion",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/10/thumbnail.jpeg",
+          "images": [
+            "https://i.dummyjson.com/data/products/10/1.jpg",
+            "https://i.dummyjson.com/data/products/10/2.jpg",
+            "https://i.dummyjson.com/data/products/10/3.jpg",
+            "https://i.dummyjson.com/data/products/10/thumbnail.jpeg"
+          ],
+          "quantity": 2,
+          "user": 4
+        },
+        {
+          "title": "Microsoft Surface Laptop 4",
+          "description": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
+          "price": 1499,
+          "discountPercentage": 10.23,
+          "rating": 4.43,
+          "stock": 68,
+          "brand": "Microsoft Surface",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/8/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/8/1.jpg",
+            "https://i.dummyjson.com/data/products/8/2.jpg",
+            "https://i.dummyjson.com/data/products/8/3.jpg",
+            "https://i.dummyjson.com/data/products/8/4.jpg",
+            "https://i.dummyjson.com/data/products/8/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 13
+        },
+        {
+          "title": "iPhone X",
+          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+          "price": 899,
+          "discountPercentage": 17.94,
+          "rating": 4.44,
+          "stock": 34,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/2/1.jpg",
+            "https://i.dummyjson.com/data/products/2/2.jpg",
+            "https://i.dummyjson.com/data/products/2/3.jpg",
+            "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 14
+        }
+      ],
+      "totalAmount": 4596,
+      "totalItems": 4,
+      "user": {
+        "email": "demo@gmail.com",
+        "password": "Demo@1234",
+        "addresses": [
+          {
+            "name": "Ayush Srivastava",
+            "email": "rishiustaad@gmail.com",
+            "phone": "09651661199",
+            "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+            "city": "Jaunpur",
+            "state": "Uttar Pradesh",
+            "pinCode": "222002"
+          },
+          {
+            "name": "Vaibhav Verma ",
+            "email": "vaibhav@gmail.com",
+            "phone": "6202355855",
+            "street": "wall street",
+            "city": "bhopal",
+            "state": "MP",
+            "pinCode": "4698458"
+          }
+        ],
+        "id": 4
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Ayush Srivastava",
+        "email": "rishiustaad@gmail.com",
+        "phone": "09651661199",
+        "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+        "city": "Jaunpur",
+        "state": "Uttar Pradesh",
+        "pinCode": "222002"
+      },
+      "id": 6
+    },
+    {
+      "items": [
+        {
+          "id": 10,
+          "title": "HP Pavilion 15-DK1056WM",
+          "description": "HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10",
+          "price": 1099,
+          "discountPercentage": 6.18,
+          "rating": 4.43,
+          "stock": 89,
+          "brand": "HP Pavilion",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/10/thumbnail.jpeg",
+          "images": [
+            "https://i.dummyjson.com/data/products/10/1.jpg",
+            "https://i.dummyjson.com/data/products/10/2.jpg",
+            "https://i.dummyjson.com/data/products/10/3.jpg",
+            "https://i.dummyjson.com/data/products/10/thumbnail.jpeg"
+          ],
+          "quantity": 2,
+          "user": 4
+        },
+        {
+          "title": "Microsoft Surface Laptop 4",
+          "description": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
+          "price": 1499,
+          "discountPercentage": 10.23,
+          "rating": 4.43,
+          "stock": 68,
+          "brand": "Microsoft Surface",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/8/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/8/1.jpg",
+            "https://i.dummyjson.com/data/products/8/2.jpg",
+            "https://i.dummyjson.com/data/products/8/3.jpg",
+            "https://i.dummyjson.com/data/products/8/4.jpg",
+            "https://i.dummyjson.com/data/products/8/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 13
+        },
+        {
+          "title": "iPhone X",
+          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+          "price": 899,
+          "discountPercentage": 17.94,
+          "rating": 4.44,
+          "stock": 34,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/2/1.jpg",
+            "https://i.dummyjson.com/data/products/2/2.jpg",
+            "https://i.dummyjson.com/data/products/2/3.jpg",
+            "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 14
+        }
+      ],
+      "totalAmount": 4596,
+      "totalItems": 4,
+      "user": {
+        "email": "demo@gmail.com",
+        "password": "Demo@1234",
+        "addresses": [
+          {
+            "name": "Ayush Srivastava",
+            "email": "rishiustaad@gmail.com",
+            "phone": "09651661199",
+            "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+            "city": "Jaunpur",
+            "state": "Uttar Pradesh",
+            "pinCode": "222002"
+          },
+          {
+            "name": "Vaibhav Verma ",
+            "email": "vaibhav@gmail.com",
+            "phone": "6202355855",
+            "street": "wall street",
+            "city": "bhopal",
+            "state": "MP",
+            "pinCode": "4698458"
+          }
+        ],
+        "id": 4
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Ayush Srivastava",
+        "email": "rishiustaad@gmail.com",
+        "phone": "09651661199",
+        "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+        "city": "Jaunpur",
+        "state": "Uttar Pradesh",
+        "pinCode": "222002"
+      },
+      "id": 7
+    },
+    {
+      "items": [
+        {
+          "id": 10,
+          "title": "HP Pavilion 15-DK1056WM",
+          "description": "HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10",
+          "price": 1099,
+          "discountPercentage": 6.18,
+          "rating": 4.43,
+          "stock": 89,
+          "brand": "HP Pavilion",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/10/thumbnail.jpeg",
+          "images": [
+            "https://i.dummyjson.com/data/products/10/1.jpg",
+            "https://i.dummyjson.com/data/products/10/2.jpg",
+            "https://i.dummyjson.com/data/products/10/3.jpg",
+            "https://i.dummyjson.com/data/products/10/thumbnail.jpeg"
+          ],
+          "quantity": 2,
+          "user": 4
+        },
+        {
+          "title": "Microsoft Surface Laptop 4",
+          "description": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
+          "price": 1499,
+          "discountPercentage": 10.23,
+          "rating": 4.43,
+          "stock": 68,
+          "brand": "Microsoft Surface",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/8/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/8/1.jpg",
+            "https://i.dummyjson.com/data/products/8/2.jpg",
+            "https://i.dummyjson.com/data/products/8/3.jpg",
+            "https://i.dummyjson.com/data/products/8/4.jpg",
+            "https://i.dummyjson.com/data/products/8/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 13
+        },
+        {
+          "title": "iPhone X",
+          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+          "price": 899,
+          "discountPercentage": 17.94,
+          "rating": 4.44,
+          "stock": 34,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/2/1.jpg",
+            "https://i.dummyjson.com/data/products/2/2.jpg",
+            "https://i.dummyjson.com/data/products/2/3.jpg",
+            "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 14
+        }
+      ],
+      "totalAmount": 4596,
+      "totalItems": 4,
+      "user": {
+        "email": "demo@gmail.com",
+        "password": "Demo@1234",
+        "addresses": [
+          {
+            "name": "Ayush Srivastava",
+            "email": "rishiustaad@gmail.com",
+            "phone": "09651661199",
+            "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+            "city": "Jaunpur",
+            "state": "Uttar Pradesh",
+            "pinCode": "222002"
+          },
+          {
+            "name": "Vaibhav Verma ",
+            "email": "vaibhav@gmail.com",
+            "phone": "6202355855",
+            "street": "wall street",
+            "city": "bhopal",
+            "state": "MP",
+            "pinCode": "4698458"
+          }
+        ],
+        "id": 4
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Ayush Srivastava",
+        "email": "rishiustaad@gmail.com",
+        "phone": "09651661199",
+        "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+        "city": "Jaunpur",
+        "state": "Uttar Pradesh",
+        "pinCode": "222002"
+      },
+      "id": 8
+    },
+    {
+      "items": [
+        {
+          "id": 10,
+          "title": "HP Pavilion 15-DK1056WM",
+          "description": "HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10",
+          "price": 1099,
+          "discountPercentage": 6.18,
+          "rating": 4.43,
+          "stock": 89,
+          "brand": "HP Pavilion",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/10/thumbnail.jpeg",
+          "images": [
+            "https://i.dummyjson.com/data/products/10/1.jpg",
+            "https://i.dummyjson.com/data/products/10/2.jpg",
+            "https://i.dummyjson.com/data/products/10/3.jpg",
+            "https://i.dummyjson.com/data/products/10/thumbnail.jpeg"
+          ],
+          "quantity": 2,
+          "user": 4
+        }
+      ],
+      "totalAmount": 2198,
+      "totalItems": 2,
+      "user": {
+        "email": "demo@gmail.com",
+        "password": "Demo@1234",
+        "addresses": [
+          {
+            "name": "Ayush Srivastava",
+            "email": "rishiustaad@gmail.com",
+            "phone": "09651661199",
+            "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+            "city": "Jaunpur",
+            "state": "Uttar Pradesh",
+            "pinCode": "222002"
+          },
+          {
+            "name": "Vaibhav Verma ",
+            "email": "vaibhav@gmail.com",
+            "phone": "6202355855",
+            "street": "wall street",
+            "city": "bhopal",
+            "state": "MP",
+            "pinCode": "4698458"
+          }
+        ],
+        "id": 4
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Ayush Srivastava",
+        "email": "rishiustaad@gmail.com",
+        "phone": "09651661199",
+        "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+        "city": "Jaunpur",
+        "state": "Uttar Pradesh",
+        "pinCode": "222002"
+      },
+      "id": 9
+    },
+    {
+      "items": [
+        {
+          "title": "OPPOF19",
+          "description": "OPPO F19 is officially announced on April 2021.",
+          "price": 280,
+          "discountPercentage": 17.91,
+          "rating": 4.3,
+          "stock": 123,
+          "brand": "OPPO",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/4/1.jpg",
+            "https://i.dummyjson.com/data/products/4/2.jpg",
+            "https://i.dummyjson.com/data/products/4/3.jpg",
+            "https://i.dummyjson.com/data/products/4/4.jpg",
+            "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 13
+        }
+      ],
+      "totalAmount": 280,
+      "totalItems": 1,
+      "user": {
+        "email": "demo@gmail.com",
+        "password": "Demo@1234",
+        "addresses": [
+          {
+            "name": "Ayush Srivastava",
+            "email": "rishiustaad@gmail.com",
+            "phone": "09651661199",
+            "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+            "city": "Jaunpur",
+            "state": "Uttar Pradesh",
+            "pinCode": "222002"
+          },
+          {
+            "name": "Vaibhav Verma ",
+            "email": "vaibhav@gmail.com",
+            "phone": "6202355855",
+            "street": "wall street",
+            "city": "bhopal",
+            "state": "MP",
+            "pinCode": "4698458"
+          }
+        ],
+        "id": 4
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Vaibhav Verma ",
+        "email": "vaibhav@gmail.com",
+        "phone": "6202355855",
+        "street": "wall street",
+        "city": "bhopal",
+        "state": "MP",
+        "pinCode": "4698458"
+      },
+      "id": 10
+    },
+    {
+      "items": [
+        {
+          "title": "OPPOF19",
+          "description": "OPPO F19 is officially announced on April 2021.",
+          "price": 280,
+          "discountPercentage": 17.91,
+          "rating": 4.3,
+          "stock": 123,
+          "brand": "OPPO",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/4/1.jpg",
+            "https://i.dummyjson.com/data/products/4/2.jpg",
+            "https://i.dummyjson.com/data/products/4/3.jpg",
+            "https://i.dummyjson.com/data/products/4/4.jpg",
+            "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 13
+        }
+      ],
+      "totalAmount": 280,
+      "totalItems": 1,
+      "user": {
+        "email": "demo@gmail.com",
+        "password": "Demo@1234",
+        "addresses": [
+          {
+            "name": "Ayush Srivastava",
+            "email": "rishiustaad@gmail.com",
+            "phone": "09651661199",
+            "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+            "city": "Jaunpur",
+            "state": "Uttar Pradesh",
+            "pinCode": "222002"
+          },
+          {
+            "name": "Vaibhav Verma ",
+            "email": "vaibhav@gmail.com",
+            "phone": "6202355855",
+            "street": "wall street",
+            "city": "bhopal",
+            "state": "MP",
+            "pinCode": "4698458"
+          }
+        ],
+        "id": 4
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Ayush Srivastava",
+        "email": "rishiustaad@gmail.com",
+        "phone": "09651661199",
+        "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+        "city": "Jaunpur",
+        "state": "Uttar Pradesh",
+        "pinCode": "222002"
+      },
+      "id": 11
+    },
+    {
+      "items": [
+        {
+          "title": "OPPOF19",
+          "description": "OPPO F19 is officially announced on April 2021.",
+          "price": 280,
+          "discountPercentage": 17.91,
+          "rating": 4.3,
+          "stock": 123,
+          "brand": "OPPO",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/4/1.jpg",
+            "https://i.dummyjson.com/data/products/4/2.jpg",
+            "https://i.dummyjson.com/data/products/4/3.jpg",
+            "https://i.dummyjson.com/data/products/4/4.jpg",
+            "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 13
+        }
+      ],
+      "totalAmount": 280,
+      "totalItems": 1,
+      "user": {
+        "email": "demo@gmail.com",
+        "password": "Demo@1234",
+        "addresses": [
+          {
+            "name": "Ayush Srivastava",
+            "email": "rishiustaad@gmail.com",
+            "phone": "09651661199",
+            "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+            "city": "Jaunpur",
+            "state": "Uttar Pradesh",
+            "pinCode": "222002"
+          },
+          {
+            "name": "Vaibhav Verma ",
+            "email": "vaibhav@gmail.com",
+            "phone": "6202355855",
+            "street": "wall street",
+            "city": "bhopal",
+            "state": "MP",
+            "pinCode": "4698458"
+          }
+        ],
+        "id": 4
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Ayush Srivastava",
+        "email": "rishiustaad@gmail.com",
+        "phone": "09651661199",
+        "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+        "city": "Jaunpur",
+        "state": "Uttar Pradesh",
+        "pinCode": "222002"
+      },
+      "id": 12
+    },
+    {
+      "items": [
+        {
+          "title": "OPPOF19",
+          "description": "OPPO F19 is officially announced on April 2021.",
+          "price": 280,
+          "discountPercentage": 17.91,
+          "rating": 4.3,
+          "stock": 123,
+          "brand": "OPPO",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/4/1.jpg",
+            "https://i.dummyjson.com/data/products/4/2.jpg",
+            "https://i.dummyjson.com/data/products/4/3.jpg",
+            "https://i.dummyjson.com/data/products/4/4.jpg",
+            "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 13
+        }
+      ],
+      "totalAmount": 280,
+      "totalItems": 1,
+      "user": {
+        "email": "demo@gmail.com",
+        "password": "Demo@1234",
+        "addresses": [
+          {
+            "name": "Ayush Srivastava",
+            "email": "rishiustaad@gmail.com",
+            "phone": "09651661199",
+            "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+            "city": "Jaunpur",
+            "state": "Uttar Pradesh",
+            "pinCode": "222002"
+          },
+          {
+            "name": "Vaibhav Verma ",
+            "email": "vaibhav@gmail.com",
+            "phone": "6202355855",
+            "street": "wall street",
+            "city": "bhopal",
+            "state": "MP",
+            "pinCode": "4698458"
+          }
+        ],
+        "id": 4
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Ayush Srivastava",
+        "email": "rishiustaad@gmail.com",
+        "phone": "09651661199",
+        "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+        "city": "Jaunpur",
+        "state": "Uttar Pradesh",
+        "pinCode": "222002"
+      },
+      "id": 13
+    },
+    {
+      "items": [
+        {
+          "title": "OPPOF19",
+          "description": "OPPO F19 is officially announced on April 2021.",
+          "price": 280,
+          "discountPercentage": 17.91,
+          "rating": 4.3,
+          "stock": 123,
+          "brand": "OPPO",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/4/1.jpg",
+            "https://i.dummyjson.com/data/products/4/2.jpg",
+            "https://i.dummyjson.com/data/products/4/3.jpg",
+            "https://i.dummyjson.com/data/products/4/4.jpg",
+            "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 13
+        }
+      ],
+      "totalAmount": 280,
+      "totalItems": 1,
+      "user": {
+        "email": "demo@gmail.com",
+        "password": "Demo@1234",
+        "addresses": [
+          {
+            "name": "Ayush Srivastava",
+            "email": "rishiustaad@gmail.com",
+            "phone": "09651661199",
+            "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+            "city": "Jaunpur",
+            "state": "Uttar Pradesh",
+            "pinCode": "222002"
+          },
+          {
+            "name": "Vaibhav Verma ",
+            "email": "vaibhav@gmail.com",
+            "phone": "6202355855",
+            "street": "wall street",
+            "city": "bhopal",
+            "state": "MP",
+            "pinCode": "4698458"
+          }
+        ],
+        "id": 4
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Ayush Srivastava",
+        "email": "rishiustaad@gmail.com",
+        "phone": "09651661199",
+        "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+        "city": "Jaunpur",
+        "state": "Uttar Pradesh",
+        "pinCode": "222002"
+      },
+      "id": 14
+    },
+    {
+      "items": [
+        {
+          "title": "OPPOF19",
+          "description": "OPPO F19 is officially announced on April 2021.",
+          "price": 280,
+          "discountPercentage": 17.91,
+          "rating": 4.3,
+          "stock": 123,
+          "brand": "OPPO",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/4/1.jpg",
+            "https://i.dummyjson.com/data/products/4/2.jpg",
+            "https://i.dummyjson.com/data/products/4/3.jpg",
+            "https://i.dummyjson.com/data/products/4/4.jpg",
+            "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 13
+        }
+      ],
+      "totalAmount": 280,
+      "totalItems": 1,
+      "user": {
+        "email": "demo@gmail.com",
+        "password": "Demo@1234",
+        "addresses": [
+          {
+            "name": "Ayush Srivastava",
+            "email": "rishiustaad@gmail.com",
+            "phone": "09651661199",
+            "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+            "city": "Jaunpur",
+            "state": "Uttar Pradesh",
+            "pinCode": "222002"
+          },
+          {
+            "name": "Vaibhav Verma ",
+            "email": "vaibhav@gmail.com",
+            "phone": "6202355855",
+            "street": "wall street",
+            "city": "bhopal",
+            "state": "MP",
+            "pinCode": "4698458"
+          }
+        ],
+        "id": 4
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Ayush Srivastava",
+        "email": "rishiustaad@gmail.com",
+        "phone": "09651661199",
+        "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+        "city": "Jaunpur",
+        "state": "Uttar Pradesh",
+        "pinCode": "222002"
+      },
+      "id": 15
+    },
+    {
+      "items": [
+        {
+          "title": "OPPOF19",
+          "description": "OPPO F19 is officially announced on April 2021.",
+          "price": 280,
+          "discountPercentage": 17.91,
+          "rating": 4.3,
+          "stock": 123,
+          "brand": "OPPO",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/4/1.jpg",
+            "https://i.dummyjson.com/data/products/4/2.jpg",
+            "https://i.dummyjson.com/data/products/4/3.jpg",
+            "https://i.dummyjson.com/data/products/4/4.jpg",
+            "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 13
+        }
+      ],
+      "totalAmount": 280,
+      "totalItems": 1,
+      "user": {
+        "email": "demo@gmail.com",
+        "password": "Demo@1234",
+        "addresses": [
+          {
+            "name": "Ayush Srivastava",
+            "email": "rishiustaad@gmail.com",
+            "phone": "09651661199",
+            "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+            "city": "Jaunpur",
+            "state": "Uttar Pradesh",
+            "pinCode": "222002"
+          },
+          {
+            "name": "Vaibhav Verma ",
+            "email": "vaibhav@gmail.com",
+            "phone": "6202355855",
+            "street": "wall street",
+            "city": "bhopal",
+            "state": "MP",
+            "pinCode": "4698458"
+          }
+        ],
+        "id": 4
+      },
+      "paymentMethod": "card",
+      "selectedAddress": {
+        "name": "Ayush Srivastava",
+        "email": "rishiustaad@gmail.com",
+        "phone": "09651661199",
+        "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+        "city": "Jaunpur",
+        "state": "Uttar Pradesh",
+        "pinCode": "222002"
+      },
+      "id": 16
+    },
+    {
+      "items": [
+        {
+          "title": "OPPOF19",
+          "description": "OPPO F19 is officially announced on April 2021.",
+          "price": 280,
+          "discountPercentage": 17.91,
+          "rating": 4.3,
+          "stock": 123,
+          "brand": "OPPO",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/4/1.jpg",
+            "https://i.dummyjson.com/data/products/4/2.jpg",
+            "https://i.dummyjson.com/data/products/4/3.jpg",
+            "https://i.dummyjson.com/data/products/4/4.jpg",
+            "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 13
+        }
+      ],
+      "totalAmount": 280,
+      "totalItems": 1,
+      "user": {
+        "email": "demo@gmail.com",
+        "password": "Demo@1234",
+        "addresses": [
+          {
+            "name": "Ayush Srivastava",
+            "email": "rishiustaad@gmail.com",
+            "phone": "09651661199",
+            "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+            "city": "Jaunpur",
+            "state": "Uttar Pradesh",
+            "pinCode": "222002"
+          },
+          {
+            "name": "Vaibhav Verma ",
+            "email": "vaibhav@gmail.com",
+            "phone": "6202355855",
+            "street": "wall street",
+            "city": "bhopal",
+            "state": "MP",
+            "pinCode": "4698458"
+          }
+        ],
+        "id": 4
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Ayush Srivastava",
+        "email": "rishiustaad@gmail.com",
+        "phone": "09651661199",
+        "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+        "city": "Jaunpur",
+        "state": "Uttar Pradesh",
+        "pinCode": "222002"
+      },
+      "status": "pending",
+      "id": 17
+    },
+    {
+      "items": [
+        {
+          "title": "OPPOF19",
+          "description": "OPPO F19 is officially announced on April 2021.",
+          "price": 280,
+          "discountPercentage": 17.91,
+          "rating": 4.3,
+          "stock": 123,
+          "brand": "OPPO",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/4/1.jpg",
+            "https://i.dummyjson.com/data/products/4/2.jpg",
+            "https://i.dummyjson.com/data/products/4/3.jpg",
+            "https://i.dummyjson.com/data/products/4/4.jpg",
+            "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 13
+        }
+      ],
+      "totalAmount": 280,
+      "totalItems": 1,
+      "user": {
+        "email": "demo@gmail.com",
+        "password": "Demo@1234",
+        "addresses": [
+          {
+            "name": "Ayush Srivastava",
+            "email": "rishiustaad@gmail.com",
+            "phone": "09651661199",
+            "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+            "city": "Jaunpur",
+            "state": "Uttar Pradesh",
+            "pinCode": "222002"
+          },
+          {
+            "name": "Vaibhav Verma ",
+            "email": "vaibhav@gmail.com",
+            "phone": "6202355855",
+            "street": "wall street",
+            "city": "bhopal",
+            "state": "MP",
+            "pinCode": "4698458"
+          }
+        ],
+        "id": 4
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Ayush Srivastava",
+        "email": "rishiustaad@gmail.com",
+        "phone": "09651661199",
+        "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+        "city": "Jaunpur",
+        "state": "Uttar Pradesh",
+        "pinCode": "222002"
+      },
+      "status": "pending",
+      "id": 18
+    },
+    {
+      "items": [
+        {
+          "title": "OPPOF19",
+          "description": "OPPO F19 is officially announced on April 2021.",
+          "price": 280,
+          "discountPercentage": 17.91,
+          "rating": 4.3,
+          "stock": 123,
+          "brand": "OPPO",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/4/1.jpg",
+            "https://i.dummyjson.com/data/products/4/2.jpg",
+            "https://i.dummyjson.com/data/products/4/3.jpg",
+            "https://i.dummyjson.com/data/products/4/4.jpg",
+            "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 13
+        }
+      ],
+      "totalAmount": 280,
+      "totalItems": 1,
+      "user": {
+        "email": "demo@gmail.com",
+        "password": "Demo@1234",
+        "addresses": [
+          {
+            "name": "Ayush Srivastava",
+            "email": "rishiustaad@gmail.com",
+            "phone": "09651661199",
+            "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+            "city": "Jaunpur",
+            "state": "Uttar Pradesh",
+            "pinCode": "222002"
+          },
+          {
+            "name": "Vaibhav Verma ",
+            "email": "vaibhav@gmail.com",
+            "phone": "6202355855",
+            "street": "wall street",
+            "city": "bhopal",
+            "state": "MP",
+            "pinCode": "4698458"
+          }
+        ],
+        "id": 4
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Ayush Srivastava",
+        "email": "rishiustaad@gmail.com",
+        "phone": "09651661199",
+        "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+        "city": "Jaunpur",
+        "state": "Uttar Pradesh",
+        "pinCode": "222002"
+      },
+      "status": "pending",
+      "id": 19
+    },
+    {
+      "items": [
+        {
+          "title": "OPPOF19",
+          "description": "OPPO F19 is officially announced on April 2021.",
+          "price": 280,
+          "discountPercentage": 17.91,
+          "rating": 4.3,
+          "stock": 123,
+          "brand": "OPPO",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/4/1.jpg",
+            "https://i.dummyjson.com/data/products/4/2.jpg",
+            "https://i.dummyjson.com/data/products/4/3.jpg",
+            "https://i.dummyjson.com/data/products/4/4.jpg",
+            "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 13
+        },
+        {
+          "title": "Samsung Galaxy Book",
+          "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
+          "price": 1499,
+          "discountPercentage": 4.15,
+          "rating": 4.25,
+          "stock": 50,
+          "brand": "Samsung",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/7/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/7/1.jpg",
+            "https://i.dummyjson.com/data/products/7/2.jpg",
+            "https://i.dummyjson.com/data/products/7/3.jpg",
+            "https://i.dummyjson.com/data/products/7/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 14
+        }
+      ],
+      "totalAmount": 1779,
+      "totalItems": 2,
+      "user": {
+        "email": "demo@gmail.com",
+        "password": "Demo@1234",
+        "addresses": [
+          {
+            "name": "Ayush Srivastava",
+            "email": "rishiustaad@gmail.com",
+            "phone": "09651661199",
+            "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+            "city": "Jaunpur",
+            "state": "Uttar Pradesh",
+            "pinCode": "222002"
+          },
+          {
+            "name": "Vaibhav Verma ",
+            "email": "vaibhav@gmail.com",
+            "phone": "6202355855",
+            "street": "wall street",
+            "city": "bhopal",
+            "state": "MP",
+            "pinCode": "4698458"
+          }
+        ],
+        "id": 4
+      },
+      "paymentMethod": "card",
+      "selectedAddress": {
+        "name": "Ayush Srivastava",
+        "email": "rishiustaad@gmail.com",
+        "phone": "09651661199",
+        "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+        "city": "Jaunpur",
+        "state": "Uttar Pradesh",
+        "pinCode": "222002"
+      },
+      "status": "pending",
+      "id": 20
+    },
+    {
+      "items": [
+        {
+          "title": "OPPOF19",
+          "description": "OPPO F19 is officially announced on April 2021.",
+          "price": 280,
+          "discountPercentage": 17.91,
+          "rating": 4.3,
+          "stock": 123,
+          "brand": "OPPO",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/4/1.jpg",
+            "https://i.dummyjson.com/data/products/4/2.jpg",
+            "https://i.dummyjson.com/data/products/4/3.jpg",
+            "https://i.dummyjson.com/data/products/4/4.jpg",
+            "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 13
+        },
+        {
+          "title": "Samsung Galaxy Book",
+          "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
+          "price": 1499,
+          "discountPercentage": 4.15,
+          "rating": 4.25,
+          "stock": 50,
+          "brand": "Samsung",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/7/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/7/1.jpg",
+            "https://i.dummyjson.com/data/products/7/2.jpg",
+            "https://i.dummyjson.com/data/products/7/3.jpg",
+            "https://i.dummyjson.com/data/products/7/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 14
+        }
+      ],
+      "totalAmount": 1779,
+      "totalItems": 2,
+      "user": {
+        "email": "demo@gmail.com",
+        "password": "Demo@1234",
+        "addresses": [
+          {
+            "name": "Ayush Srivastava",
+            "email": "rishiustaad@gmail.com",
+            "phone": "09651661199",
+            "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+            "city": "Jaunpur",
+            "state": "Uttar Pradesh",
+            "pinCode": "222002"
+          },
+          {
+            "name": "Vaibhav Verma ",
+            "email": "vaibhav@gmail.com",
+            "phone": "6202355855",
+            "street": "wall street",
+            "city": "bhopal",
+            "state": "MP",
+            "pinCode": "4698458"
+          }
+        ],
+        "id": 4
+      },
+      "paymentMethod": "card",
+      "selectedAddress": {
+        "name": "Ayush Srivastava",
+        "email": "rishiustaad@gmail.com",
+        "phone": "09651661199",
+        "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+        "city": "Jaunpur",
+        "state": "Uttar Pradesh",
+        "pinCode": "222002"
+      },
+      "status": "pending",
+      "id": 21
+    },
+    {
+      "items": [
+        {
+          "title": "OPPOF19",
+          "description": "OPPO F19 is officially announced on April 2021.",
+          "price": 280,
+          "discountPercentage": 17.91,
+          "rating": 4.3,
+          "stock": 123,
+          "brand": "OPPO",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/4/1.jpg",
+            "https://i.dummyjson.com/data/products/4/2.jpg",
+            "https://i.dummyjson.com/data/products/4/3.jpg",
+            "https://i.dummyjson.com/data/products/4/4.jpg",
+            "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 13
+        },
+        {
+          "title": "Samsung Galaxy Book",
+          "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
+          "price": 1499,
+          "discountPercentage": 4.15,
+          "rating": 4.25,
+          "stock": 50,
+          "brand": "Samsung",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/7/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/7/1.jpg",
+            "https://i.dummyjson.com/data/products/7/2.jpg",
+            "https://i.dummyjson.com/data/products/7/3.jpg",
+            "https://i.dummyjson.com/data/products/7/thumbnail.jpg"
+          ],
+          "quantity": 2,
+          "user": 4,
+          "id": 14
+        }
+      ],
+      "totalAmount": 3278,
+      "totalItems": 3,
+      "user": {
+        "email": "demo@gmail.com",
+        "password": "Demo@1234",
+        "addresses": [
+          {
+            "name": "Ayush Srivastava",
+            "email": "rishiustaad@gmail.com",
+            "phone": "09651661199",
+            "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+            "city": "Jaunpur",
+            "state": "Uttar Pradesh",
+            "pinCode": "222002"
+          },
+          {
+            "name": "Vaibhav Verma ",
+            "email": "vaibhav@gmail.com",
+            "phone": "6202355855",
+            "street": "wall street",
+            "city": "bhopal",
+            "state": "MP",
+            "pinCode": "4698458"
+          }
+        ],
+        "id": 4
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Vaibhav Verma ",
+        "email": "vaibhav@gmail.com",
+        "phone": "6202355855",
+        "street": "wall street",
+        "city": "bhopal",
+        "state": "MP",
+        "pinCode": "4698458"
+      },
+      "status": "pending",
+      "id": 22
+    },
+    {
+      "items": [
+        {
+          "title": "OPPOF19",
+          "description": "OPPO F19 is officially announced on April 2021.",
+          "price": 280,
+          "discountPercentage": 17.91,
+          "rating": 4.3,
+          "stock": 123,
+          "brand": "OPPO",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/4/1.jpg",
+            "https://i.dummyjson.com/data/products/4/2.jpg",
+            "https://i.dummyjson.com/data/products/4/3.jpg",
+            "https://i.dummyjson.com/data/products/4/4.jpg",
+            "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 13
+        },
+        {
+          "title": "Samsung Galaxy Book",
+          "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
+          "price": 1499,
+          "discountPercentage": 4.15,
+          "rating": 4.25,
+          "stock": 50,
+          "brand": "Samsung",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/7/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/7/1.jpg",
+            "https://i.dummyjson.com/data/products/7/2.jpg",
+            "https://i.dummyjson.com/data/products/7/3.jpg",
+            "https://i.dummyjson.com/data/products/7/thumbnail.jpg"
+          ],
+          "quantity": 2,
+          "user": 4,
+          "id": 14
+        }
+      ],
+      "totalAmount": 3278,
+      "totalItems": 3,
+      "user": {
+        "email": "demo@gmail.com",
+        "password": "Demo@1234",
+        "addresses": [
+          {
+            "name": "Ayush Srivastava",
+            "email": "rishiustaad@gmail.com",
+            "phone": "09651661199",
+            "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+            "city": "Jaunpur",
+            "state": "Uttar Pradesh",
+            "pinCode": "222002"
+          },
+          {
+            "name": "Vaibhav Verma ",
+            "email": "vaibhav@gmail.com",
+            "phone": "6202355855",
+            "street": "wall street",
+            "city": "bhopal",
+            "state": "MP",
+            "pinCode": "4698458"
+          }
+        ],
+        "id": 4
+      },
+      "paymentMethod": "card",
+      "selectedAddress": {
+        "name": "Ayush Srivastava",
+        "email": "rishiustaad@gmail.com",
+        "phone": "09651661199",
+        "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+        "city": "Jaunpur",
+        "state": "Uttar Pradesh",
+        "pinCode": "222002"
+      },
+      "status": "pending",
+      "id": 23
+    },
+    {
+      "items": [
+        {
+          "title": "OPPOF19",
+          "description": "OPPO F19 is officially announced on April 2021.",
+          "price": 280,
+          "discountPercentage": 17.91,
+          "rating": 4.3,
+          "stock": 123,
+          "brand": "OPPO",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/4/1.jpg",
+            "https://i.dummyjson.com/data/products/4/2.jpg",
+            "https://i.dummyjson.com/data/products/4/3.jpg",
+            "https://i.dummyjson.com/data/products/4/4.jpg",
+            "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 13
+        },
+        {
+          "title": "Samsung Galaxy Book",
+          "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
+          "price": 1499,
+          "discountPercentage": 4.15,
+          "rating": 4.25,
+          "stock": 50,
+          "brand": "Samsung",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/7/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/7/1.jpg",
+            "https://i.dummyjson.com/data/products/7/2.jpg",
+            "https://i.dummyjson.com/data/products/7/3.jpg",
+            "https://i.dummyjson.com/data/products/7/thumbnail.jpg"
+          ],
+          "quantity": 2,
+          "user": 4,
+          "id": 14
+        }
+      ],
+      "totalAmount": 3278,
+      "totalItems": 3,
+      "user": {
+        "email": "demo@gmail.com",
+        "password": "Demo@1234",
+        "addresses": [
+          {
+            "name": "Ayush Srivastava",
+            "email": "rishiustaad@gmail.com",
+            "phone": "09651661199",
+            "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+            "city": "Jaunpur",
+            "state": "Uttar Pradesh",
+            "pinCode": "222002"
+          },
+          {
+            "name": "Vaibhav Verma ",
+            "email": "vaibhav@gmail.com",
+            "phone": "6202355855",
+            "street": "wall street",
+            "city": "bhopal",
+            "state": "MP",
+            "pinCode": "4698458"
+          }
+        ],
+        "id": 4
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Vaibhav Verma ",
+        "email": "vaibhav@gmail.com",
+        "phone": "6202355855",
+        "street": "wall street",
+        "city": "bhopal",
+        "state": "MP",
+        "pinCode": "4698458"
+      },
+      "status": "pending",
+      "id": 24
+    },
+    {
+      "items": [
+        {
+          "title": "OPPOF19",
+          "description": "OPPO F19 is officially announced on April 2021.",
+          "price": 280,
+          "discountPercentage": 17.91,
+          "rating": 4.3,
+          "stock": 123,
+          "brand": "OPPO",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/4/1.jpg",
+            "https://i.dummyjson.com/data/products/4/2.jpg",
+            "https://i.dummyjson.com/data/products/4/3.jpg",
+            "https://i.dummyjson.com/data/products/4/4.jpg",
+            "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 13
+        },
+        {
+          "title": "Samsung Galaxy Book",
+          "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
+          "price": 1499,
+          "discountPercentage": 4.15,
+          "rating": 4.25,
+          "stock": 50,
+          "brand": "Samsung",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/7/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/7/1.jpg",
+            "https://i.dummyjson.com/data/products/7/2.jpg",
+            "https://i.dummyjson.com/data/products/7/3.jpg",
+            "https://i.dummyjson.com/data/products/7/thumbnail.jpg"
+          ],
+          "quantity": 2,
+          "user": 4,
+          "id": 14
+        }
+      ],
+      "totalAmount": 3278,
+      "totalItems": 3,
+      "user": {
+        "email": "demo@gmail.com",
+        "password": "Demo@1234",
+        "addresses": [
+          {
+            "name": "Ayush Srivastava",
+            "email": "rishiustaad@gmail.com",
+            "phone": "09651661199",
+            "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+            "city": "Jaunpur",
+            "state": "Uttar Pradesh",
+            "pinCode": "222002"
+          },
+          {
+            "name": "Vaibhav Verma ",
+            "email": "vaibhav@gmail.com",
+            "phone": "6202355855",
+            "street": "wall street",
+            "city": "bhopal",
+            "state": "MP",
+            "pinCode": "4698458"
+          }
+        ],
+        "id": 4
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Ayush Srivastava",
+        "email": "rishiustaad@gmail.com",
+        "phone": "09651661199",
+        "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+        "city": "Jaunpur",
+        "state": "Uttar Pradesh",
+        "pinCode": "222002"
+      },
+      "status": "pending",
+      "id": 25
+    },
+    {
+      "items": [
+        {
+          "title": "OPPOF19",
+          "description": "OPPO F19 is officially announced on April 2021.",
+          "price": 280,
+          "discountPercentage": 17.91,
+          "rating": 4.3,
+          "stock": 123,
+          "brand": "OPPO",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/4/1.jpg",
+            "https://i.dummyjson.com/data/products/4/2.jpg",
+            "https://i.dummyjson.com/data/products/4/3.jpg",
+            "https://i.dummyjson.com/data/products/4/4.jpg",
+            "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 13
+        },
+        {
+          "title": "Samsung Galaxy Book",
+          "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
+          "price": 1499,
+          "discountPercentage": 4.15,
+          "rating": 4.25,
+          "stock": 50,
+          "brand": "Samsung",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/7/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/7/1.jpg",
+            "https://i.dummyjson.com/data/products/7/2.jpg",
+            "https://i.dummyjson.com/data/products/7/3.jpg",
+            "https://i.dummyjson.com/data/products/7/thumbnail.jpg"
+          ],
+          "quantity": 2,
+          "user": 4,
+          "id": 14
+        }
+      ],
+      "totalAmount": 3278,
+      "totalItems": 3,
+      "user": {
+        "email": "demo@gmail.com",
+        "password": "Demo@1234",
+        "addresses": [
+          {
+            "name": "Ayush Srivastava",
+            "email": "rishiustaad@gmail.com",
+            "phone": "09651661199",
+            "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+            "city": "Jaunpur",
+            "state": "Uttar Pradesh",
+            "pinCode": "222002"
+          },
+          {
+            "name": "Vaibhav Verma ",
+            "email": "vaibhav@gmail.com",
+            "phone": "6202355855",
+            "street": "wall street",
+            "city": "bhopal",
+            "state": "MP",
+            "pinCode": "4698458"
+          }
+        ],
+        "id": 4
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Ayush Srivastava",
+        "email": "rishiustaad@gmail.com",
+        "phone": "09651661199",
+        "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+        "city": "Jaunpur",
+        "state": "Uttar Pradesh",
+        "pinCode": "222002"
+      },
+      "status": "pending",
+      "id": 26
+    },
+    {
+      "items": [
+        {
+          "title": "OPPOF19",
+          "description": "OPPO F19 is officially announced on April 2021.",
+          "price": 280,
+          "discountPercentage": 17.91,
+          "rating": 4.3,
+          "stock": 123,
+          "brand": "OPPO",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/4/1.jpg",
+            "https://i.dummyjson.com/data/products/4/2.jpg",
+            "https://i.dummyjson.com/data/products/4/3.jpg",
+            "https://i.dummyjson.com/data/products/4/4.jpg",
+            "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 13
+        },
+        {
+          "title": "Samsung Galaxy Book",
+          "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
+          "price": 1499,
+          "discountPercentage": 4.15,
+          "rating": 4.25,
+          "stock": 50,
+          "brand": "Samsung",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/7/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/7/1.jpg",
+            "https://i.dummyjson.com/data/products/7/2.jpg",
+            "https://i.dummyjson.com/data/products/7/3.jpg",
+            "https://i.dummyjson.com/data/products/7/thumbnail.jpg"
+          ],
+          "quantity": 2,
+          "user": 4,
+          "id": 14
+        }
+      ],
+      "totalAmount": 3278,
+      "totalItems": 3,
+      "user": {
+        "email": "demo@gmail.com",
+        "password": "Demo@1234",
+        "addresses": [
+          {
+            "name": "Ayush Srivastava",
+            "email": "rishiustaad@gmail.com",
+            "phone": "09651661199",
+            "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+            "city": "Jaunpur",
+            "state": "Uttar Pradesh",
+            "pinCode": "222002"
+          },
+          {
+            "name": "Vaibhav Verma ",
+            "email": "vaibhav@gmail.com",
+            "phone": "6202355855",
+            "street": "wall street",
+            "city": "bhopal",
+            "state": "MP",
+            "pinCode": "4698458"
+          }
+        ],
+        "id": 4
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Ayush Srivastava",
+        "email": "rishiustaad@gmail.com",
+        "phone": "09651661199",
+        "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+        "city": "Jaunpur",
+        "state": "Uttar Pradesh",
+        "pinCode": "222002"
+      },
+      "status": "pending",
+      "id": 27
+    },
+    {
+      "items": [
+        {
+          "title": "OPPOF19",
+          "description": "OPPO F19 is officially announced on April 2021.",
+          "price": 280,
+          "discountPercentage": 17.91,
+          "rating": 4.3,
+          "stock": 123,
+          "brand": "OPPO",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/4/1.jpg",
+            "https://i.dummyjson.com/data/products/4/2.jpg",
+            "https://i.dummyjson.com/data/products/4/3.jpg",
+            "https://i.dummyjson.com/data/products/4/4.jpg",
+            "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 13
+        },
+        {
+          "title": "Samsung Galaxy Book",
+          "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
+          "price": 1499,
+          "discountPercentage": 4.15,
+          "rating": 4.25,
+          "stock": 50,
+          "brand": "Samsung",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/7/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/7/1.jpg",
+            "https://i.dummyjson.com/data/products/7/2.jpg",
+            "https://i.dummyjson.com/data/products/7/3.jpg",
+            "https://i.dummyjson.com/data/products/7/thumbnail.jpg"
+          ],
+          "quantity": 2,
+          "user": 4,
+          "id": 14
+        }
+      ],
+      "totalAmount": 3278,
+      "totalItems": 3,
+      "user": {
+        "email": "demo@gmail.com",
+        "password": "Demo@1234",
+        "addresses": [
+          {
+            "name": "Ayush Srivastava",
+            "email": "rishiustaad@gmail.com",
+            "phone": "09651661199",
+            "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+            "city": "Jaunpur",
+            "state": "Uttar Pradesh",
+            "pinCode": "222002"
+          },
+          {
+            "name": "Vaibhav Verma ",
+            "email": "vaibhav@gmail.com",
+            "phone": "6202355855",
+            "street": "wall street",
+            "city": "bhopal",
+            "state": "MP",
+            "pinCode": "4698458"
+          }
+        ],
+        "id": 4
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Vaibhav Verma ",
+        "email": "vaibhav@gmail.com",
+        "phone": "6202355855",
+        "street": "wall street",
+        "city": "bhopal",
+        "state": "MP",
+        "pinCode": "4698458"
+      },
+      "status": "pending",
+      "id": 28
+    },
+    {
+      "items": [
+        {
+          "title": "OPPOF19",
+          "description": "OPPO F19 is officially announced on April 2021.",
+          "price": 280,
+          "discountPercentage": 17.91,
+          "rating": 4.3,
+          "stock": 123,
+          "brand": "OPPO",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/4/1.jpg",
+            "https://i.dummyjson.com/data/products/4/2.jpg",
+            "https://i.dummyjson.com/data/products/4/3.jpg",
+            "https://i.dummyjson.com/data/products/4/4.jpg",
+            "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 13
+        },
+        {
+          "title": "Samsung Galaxy Book",
+          "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
+          "price": 1499,
+          "discountPercentage": 4.15,
+          "rating": 4.25,
+          "stock": 50,
+          "brand": "Samsung",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/7/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/7/1.jpg",
+            "https://i.dummyjson.com/data/products/7/2.jpg",
+            "https://i.dummyjson.com/data/products/7/3.jpg",
+            "https://i.dummyjson.com/data/products/7/thumbnail.jpg"
+          ],
+          "quantity": 2,
+          "user": 4,
+          "id": 14
+        }
+      ],
+      "totalAmount": 3278,
+      "totalItems": 3,
+      "user": {
+        "email": "demo@gmail.com",
+        "password": "Demo@1234",
+        "addresses": [
+          {
+            "name": "Ayush Srivastava",
+            "email": "rishiustaad@gmail.com",
+            "phone": "09651661199",
+            "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+            "city": "Jaunpur",
+            "state": "Uttar Pradesh",
+            "pinCode": "222002"
+          },
+          {
+            "name": "Vaibhav Verma ",
+            "email": "vaibhav@gmail.com",
+            "phone": "6202355855",
+            "street": "wall street",
+            "city": "bhopal",
+            "state": "MP",
+            "pinCode": "4698458"
+          }
+        ],
+        "id": 4
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Vaibhav Verma ",
+        "email": "vaibhav@gmail.com",
+        "phone": "6202355855",
+        "street": "wall street",
+        "city": "bhopal",
+        "state": "MP",
+        "pinCode": "4698458"
+      },
+      "status": "pending",
+      "id": 29
+    },
+    {
+      "items": [
+        {
+          "title": "OPPOF19",
+          "description": "OPPO F19 is officially announced on April 2021.",
+          "price": 280,
+          "discountPercentage": 17.91,
+          "rating": 4.3,
+          "stock": 123,
+          "brand": "OPPO",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/4/1.jpg",
+            "https://i.dummyjson.com/data/products/4/2.jpg",
+            "https://i.dummyjson.com/data/products/4/3.jpg",
+            "https://i.dummyjson.com/data/products/4/4.jpg",
+            "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 13
+        },
+        {
+          "title": "Samsung Galaxy Book",
+          "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
+          "price": 1499,
+          "discountPercentage": 4.15,
+          "rating": 4.25,
+          "stock": 50,
+          "brand": "Samsung",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/7/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/7/1.jpg",
+            "https://i.dummyjson.com/data/products/7/2.jpg",
+            "https://i.dummyjson.com/data/products/7/3.jpg",
+            "https://i.dummyjson.com/data/products/7/thumbnail.jpg"
+          ],
+          "quantity": 2,
+          "user": 4,
+          "id": 14
+        }
+      ],
+      "totalAmount": 3278,
+      "totalItems": 3,
+      "user": {
+        "email": "demo@gmail.com",
+        "password": "Demo@1234",
+        "addresses": [
+          {
+            "name": "Ayush Srivastava",
+            "email": "rishiustaad@gmail.com",
+            "phone": "09651661199",
+            "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+            "city": "Jaunpur",
+            "state": "Uttar Pradesh",
+            "pinCode": "222002"
+          },
+          {
+            "name": "Vaibhav Verma ",
+            "email": "vaibhav@gmail.com",
+            "phone": "6202355855",
+            "street": "wall street",
+            "city": "bhopal",
+            "state": "MP",
+            "pinCode": "4698458"
+          }
+        ],
+        "id": 4
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Ayush Srivastava",
+        "email": "rishiustaad@gmail.com",
+        "phone": "09651661199",
+        "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+        "city": "Jaunpur",
+        "state": "Uttar Pradesh",
+        "pinCode": "222002"
+      },
+      "status": "pending",
+      "id": 30
+    },
+    {
+      "items": [
+        {
+          "title": "OPPOF19",
+          "description": "OPPO F19 is officially announced on April 2021.",
+          "price": 280,
+          "discountPercentage": 17.91,
+          "rating": 4.3,
+          "stock": 123,
+          "brand": "OPPO",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/4/1.jpg",
+            "https://i.dummyjson.com/data/products/4/2.jpg",
+            "https://i.dummyjson.com/data/products/4/3.jpg",
+            "https://i.dummyjson.com/data/products/4/4.jpg",
+            "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 13
+        },
+        {
+          "title": "Samsung Galaxy Book",
+          "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
+          "price": 1499,
+          "discountPercentage": 4.15,
+          "rating": 4.25,
+          "stock": 50,
+          "brand": "Samsung",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/7/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/7/1.jpg",
+            "https://i.dummyjson.com/data/products/7/2.jpg",
+            "https://i.dummyjson.com/data/products/7/3.jpg",
+            "https://i.dummyjson.com/data/products/7/thumbnail.jpg"
+          ],
+          "quantity": 2,
+          "user": 4,
+          "id": 14
+        }
+      ],
+      "totalAmount": 3278,
+      "totalItems": 3,
+      "user": {
+        "email": "demo@gmail.com",
+        "password": "Demo@1234",
+        "addresses": [
+          {
+            "name": "Ayush Srivastava",
+            "email": "rishiustaad@gmail.com",
+            "phone": "09651661199",
+            "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+            "city": "Jaunpur",
+            "state": "Uttar Pradesh",
+            "pinCode": "222002"
+          },
+          {
+            "name": "Vaibhav Verma ",
+            "email": "vaibhav@gmail.com",
+            "phone": "6202355855",
+            "street": "wall street",
+            "city": "bhopal",
+            "state": "MP",
+            "pinCode": "4698458"
+          }
+        ],
+        "id": 4
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Vaibhav Verma ",
+        "email": "vaibhav@gmail.com",
+        "phone": "6202355855",
+        "street": "wall street",
+        "city": "bhopal",
+        "state": "MP",
+        "pinCode": "4698458"
+      },
+      "status": "pending",
+      "id": 31
+    },
+    {
+      "items": [
+        {
+          "title": "OPPOF19",
+          "description": "OPPO F19 is officially announced on April 2021.",
+          "price": 280,
+          "discountPercentage": 17.91,
+          "rating": 4.3,
+          "stock": 123,
+          "brand": "OPPO",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/4/1.jpg",
+            "https://i.dummyjson.com/data/products/4/2.jpg",
+            "https://i.dummyjson.com/data/products/4/3.jpg",
+            "https://i.dummyjson.com/data/products/4/4.jpg",
+            "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 13
+        },
+        {
+          "title": "Samsung Galaxy Book",
+          "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
+          "price": 1499,
+          "discountPercentage": 4.15,
+          "rating": 4.25,
+          "stock": 50,
+          "brand": "Samsung",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/7/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/7/1.jpg",
+            "https://i.dummyjson.com/data/products/7/2.jpg",
+            "https://i.dummyjson.com/data/products/7/3.jpg",
+            "https://i.dummyjson.com/data/products/7/thumbnail.jpg"
+          ],
+          "quantity": 2,
+          "user": 4,
+          "id": 14
+        }
+      ],
+      "totalAmount": 3278,
+      "totalItems": 3,
+      "user": {
+        "email": "demo@gmail.com",
+        "password": "Demo@1234",
+        "addresses": [
+          {
+            "name": "Ayush Srivastava",
+            "email": "rishiustaad@gmail.com",
+            "phone": "09651661199",
+            "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+            "city": "Jaunpur",
+            "state": "Uttar Pradesh",
+            "pinCode": "222002"
+          },
+          {
+            "name": "Vaibhav Verma ",
+            "email": "vaibhav@gmail.com",
+            "phone": "6202355855",
+            "street": "wall street",
+            "city": "bhopal",
+            "state": "MP",
+            "pinCode": "4698458"
+          }
+        ],
+        "id": 4
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Ayush Srivastava",
+        "email": "rishiustaad@gmail.com",
+        "phone": "09651661199",
+        "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+        "city": "Jaunpur",
+        "state": "Uttar Pradesh",
+        "pinCode": "222002"
+      },
+      "status": "pending",
+      "id": 32
+    },
+    {
+      "items": [
+        {
+          "title": "iPhone X",
+          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+          "price": 899,
+          "discountPercentage": 17.94,
+          "rating": 4.44,
+          "stock": 34,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/2/1.jpg",
+            "https://i.dummyjson.com/data/products/2/2.jpg",
+            "https://i.dummyjson.com/data/products/2/3.jpg",
+            "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 5,
+          "id": 15
+        },
+        {
+          "title": "OPPOF19",
+          "description": "OPPO F19 is officially announced on April 2021.",
+          "price": 280,
+          "discountPercentage": 17.91,
+          "rating": 4.3,
+          "stock": 123,
+          "brand": "OPPO",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/4/1.jpg",
+            "https://i.dummyjson.com/data/products/4/2.jpg",
+            "https://i.dummyjson.com/data/products/4/3.jpg",
+            "https://i.dummyjson.com/data/products/4/4.jpg",
+            "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 5,
+          "id": 16
+        },
+        {
+          "title": "OPPOF19",
+          "description": "OPPO F19 is officially announced on April 2021.",
+          "price": 280,
+          "discountPercentage": 17.91,
+          "rating": 4.3,
+          "stock": 123,
+          "brand": "OPPO",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/4/1.jpg",
+            "https://i.dummyjson.com/data/products/4/2.jpg",
+            "https://i.dummyjson.com/data/products/4/3.jpg",
+            "https://i.dummyjson.com/data/products/4/4.jpg",
+            "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 5,
+          "id": 17
+        }
+      ],
+      "totalAmount": 1459,
+      "totalItems": 3,
+      "user": {
+        "email": "demo1@gmail.com",
+        "password": "Demo1@1234",
+        "addresses": [
+          {
+            "name": "Ayush Srivastava",
+            "email": "rishiustaad@gmail.com",
+            "phone": "09651661199",
+            "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+            "city": "Jaunpur",
+            "state": "Uttar Pradesh",
+            "pinCode": "222002"
+          }
+        ],
+        "id": 5
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Ayush Srivastava",
+        "email": "rishiustaad@gmail.com",
+        "phone": "09651661199",
+        "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+        "city": "Jaunpur",
+        "state": "Uttar Pradesh",
+        "pinCode": "222002"
+      },
+      "status": "pending",
+      "id": 33
+    },
+    {
+      "items": [
+        {
+          "title": "iPhone X",
+          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+          "price": 899,
+          "discountPercentage": 17.94,
+          "rating": 4.44,
+          "stock": 34,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/2/1.jpg",
+            "https://i.dummyjson.com/data/products/2/2.jpg",
+            "https://i.dummyjson.com/data/products/2/3.jpg",
+            "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 5,
+          "id": 15
+        },
+        {
+          "title": "OPPOF19",
+          "description": "OPPO F19 is officially announced on April 2021.",
+          "price": 280,
+          "discountPercentage": 17.91,
+          "rating": 4.3,
+          "stock": 123,
+          "brand": "OPPO",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/4/1.jpg",
+            "https://i.dummyjson.com/data/products/4/2.jpg",
+            "https://i.dummyjson.com/data/products/4/3.jpg",
+            "https://i.dummyjson.com/data/products/4/4.jpg",
+            "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 5,
+          "id": 16
+        },
+        {
+          "title": "OPPOF19",
+          "description": "OPPO F19 is officially announced on April 2021.",
+          "price": 280,
+          "discountPercentage": 17.91,
+          "rating": 4.3,
+          "stock": 123,
+          "brand": "OPPO",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/4/1.jpg",
+            "https://i.dummyjson.com/data/products/4/2.jpg",
+            "https://i.dummyjson.com/data/products/4/3.jpg",
+            "https://i.dummyjson.com/data/products/4/4.jpg",
+            "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 5,
+          "id": 17
+        }
+      ],
+      "totalAmount": 1459,
+      "totalItems": 3,
+      "user": {
+        "email": "demo1@gmail.com",
+        "password": "Demo1@1234",
+        "addresses": [
+          {
+            "name": "Ayush Srivastava",
+            "email": "rishiustaad@gmail.com",
+            "phone": "09651661199",
+            "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+            "city": "Jaunpur",
+            "state": "Uttar Pradesh",
+            "pinCode": "222002"
+          }
+        ],
+        "id": 5
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Ayush Srivastava",
+        "email": "rishiustaad@gmail.com",
+        "phone": "09651661199",
+        "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+        "city": "Jaunpur",
+        "state": "Uttar Pradesh",
+        "pinCode": "222002"
+      },
+      "status": "pending",
+      "id": 34
+    },
+    {
+      "items": [
+        {
+          "title": "OPPOF19",
+          "description": "OPPO F19 is officially announced on April 2021.",
+          "price": 280,
+          "discountPercentage": 17.91,
+          "rating": 4.3,
+          "stock": 123,
+          "brand": "OPPO",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/4/1.jpg",
+            "https://i.dummyjson.com/data/products/4/2.jpg",
+            "https://i.dummyjson.com/data/products/4/3.jpg",
+            "https://i.dummyjson.com/data/products/4/4.jpg",
+            "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 13
+        },
+        {
+          "title": "Samsung Galaxy Book",
+          "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
+          "price": 1499,
+          "discountPercentage": 4.15,
+          "rating": 4.25,
+          "stock": 50,
+          "brand": "Samsung",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/7/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/7/1.jpg",
+            "https://i.dummyjson.com/data/products/7/2.jpg",
+            "https://i.dummyjson.com/data/products/7/3.jpg",
+            "https://i.dummyjson.com/data/products/7/thumbnail.jpg"
+          ],
+          "quantity": 2,
+          "user": 4,
+          "id": 14
+        }
+      ],
+      "totalAmount": 3278,
+      "totalItems": 3,
+      "user": {
+        "email": "demo@gmail.com",
+        "password": "Demo@1234",
+        "addresses": [
+          {
+            "name": "Ayush Srivastava",
+            "email": "rishiustaad@gmail.com",
+            "phone": "09651661199",
+            "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+            "city": "Jaunpur",
+            "state": "Uttar Pradesh",
+            "pinCode": "222002"
+          },
+          {
+            "name": "Vaibhav Verma ",
+            "email": "vaibhav@gmail.com",
+            "phone": "6202355855",
+            "street": "wall street",
+            "city": "bhopal",
+            "state": "MP",
+            "pinCode": "4698458"
+          }
+        ],
+        "id": 4
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Ayush Srivastava",
+        "email": "rishiustaad@gmail.com",
+        "phone": "09651661199",
+        "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+        "city": "Jaunpur",
+        "state": "Uttar Pradesh",
+        "pinCode": "222002"
+      },
+      "status": "pending",
+      "id": 35
+    },
+    {
+      "items": [
+        {
+          "title": "iPhone X",
+          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+          "price": 899,
+          "discountPercentage": 17.94,
+          "rating": 4.44,
+          "stock": 34,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/2/1.jpg",
+            "https://i.dummyjson.com/data/products/2/2.jpg",
+            "https://i.dummyjson.com/data/products/2/3.jpg",
+            "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 18
+        }
+      ],
+      "totalAmount": 899,
+      "totalItems": 1,
+      "user": {
+        "email": "demo@gmail.com",
+        "password": "Demo@1234",
+        "addresses": [
+          {
+            "name": "Ayush Srivastava",
+            "email": "rishiustaad@gmail.com",
+            "phone": "09651661199",
+            "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+            "city": "Jaunpur",
+            "state": "Uttar Pradesh",
+            "pinCode": "222002"
+          },
+          {
+            "name": "Vaibhav Verma ",
+            "email": "vaibhav@gmail.com",
+            "phone": "6202355855",
+            "street": "wall street",
+            "city": "bhopal",
+            "state": "MP",
+            "pinCode": "4698458"
+          }
+        ],
+        "id": 4
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Ayush Srivastava",
+        "email": "rishiustaad@gmail.com",
+        "phone": "09651661199",
+        "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+        "city": "Jaunpur",
+        "state": "Uttar Pradesh",
+        "pinCode": "222002"
+      },
+      "status": "pending",
+      "id": 36
+    },
+    {
+      "items": [
+        {
+          "title": "iPhone X",
+          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+          "price": 899,
+          "discountPercentage": 17.94,
+          "rating": 4.44,
+          "stock": 34,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/2/1.jpg",
+            "https://i.dummyjson.com/data/products/2/2.jpg",
+            "https://i.dummyjson.com/data/products/2/3.jpg",
+            "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 2,
+          "id": 18
+        },
+        {
+          "title": "Microsoft Surface Laptop 4",
+          "description": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
+          "price": 1499,
+          "discountPercentage": 10.23,
+          "rating": 4.43,
+          "stock": 68,
+          "brand": "Microsoft Surface",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/8/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/8/1.jpg",
+            "https://i.dummyjson.com/data/products/8/2.jpg",
+            "https://i.dummyjson.com/data/products/8/3.jpg",
+            "https://i.dummyjson.com/data/products/8/4.jpg",
+            "https://i.dummyjson.com/data/products/8/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 2,
+          "id": 19
+        }
+      ],
+      "totalAmount": 2398,
+      "totalItems": 2,
+      "user": {
+        "email": "ayush@gmail.com",
+        "password": "Kumar@1234",
+        "addresses": [
+          {
+            "name": "Ayush Srivastava",
+            "email": "rishiustaad@gmail.com",
+            "phone": "09651661199",
+            "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+            "city": "Jaunpur",
+            "state": "Uttar Pradesh",
+            "pinCode": "222002"
+          }
+        ],
+        "id": 2
+      },
+      "paymentMethod": "card",
+      "selectedAddress": {
+        "name": "Ayush Srivastava",
+        "email": "rishiustaad@gmail.com",
+        "phone": "09651661199",
+        "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+        "city": "Jaunpur",
+        "state": "Uttar Pradesh",
+        "pinCode": "222002"
+      },
+      "status": "pending",
+      "id": 37
+    },
+    {
+      "items": [
+        {
+          "title": "iPhone X",
+          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+          "price": 899,
+          "discountPercentage": 17.94,
+          "rating": 4.44,
+          "stock": 34,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/2/1.jpg",
+            "https://i.dummyjson.com/data/products/2/2.jpg",
+            "https://i.dummyjson.com/data/products/2/3.jpg",
+            "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 5,
+          "id": 15
+        },
+        {
+          "title": "OPPOF19",
+          "description": "OPPO F19 is officially announced on April 2021.",
+          "price": 280,
+          "discountPercentage": 17.91,
+          "rating": 4.3,
+          "stock": 123,
+          "brand": "OPPO",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/4/1.jpg",
+            "https://i.dummyjson.com/data/products/4/2.jpg",
+            "https://i.dummyjson.com/data/products/4/3.jpg",
+            "https://i.dummyjson.com/data/products/4/4.jpg",
+            "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 5,
+          "id": 16
+        },
+        {
+          "title": "OPPOF19",
+          "description": "OPPO F19 is officially announced on April 2021.",
+          "price": 280,
+          "discountPercentage": 17.91,
+          "rating": 4.3,
+          "stock": 123,
+          "brand": "OPPO",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/4/1.jpg",
+            "https://i.dummyjson.com/data/products/4/2.jpg",
+            "https://i.dummyjson.com/data/products/4/3.jpg",
+            "https://i.dummyjson.com/data/products/4/4.jpg",
+            "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 5,
+          "id": 17
+        }
+      ],
+      "totalAmount": 1459,
+      "totalItems": 3,
+      "user": {
+        "email": "demo1@gmail.com",
+        "password": "Demo1@1234",
+        "addresses": [
+          {
+            "name": "Ayush Srivastava",
+            "email": "rishiustaad@gmail.com",
+            "phone": "09651661199",
+            "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+            "city": "Jaunpur",
+            "state": "Uttar Pradesh",
+            "pinCode": "222002"
+          }
+        ],
+        "id": 5
+      },
+      "paymentMethod": "card",
+      "selectedAddress": {
+        "name": "Ayush Srivastava",
+        "email": "rishiustaad@gmail.com",
+        "phone": "09651661199",
+        "street": "640BB BASNT KUNJ COLONY UMARPUR HARIBANDHANPUR JAUNPUR",
+        "city": "Jaunpur",
+        "state": "Uttar Pradesh",
+        "pinCode": "222002"
+      },
+      "status": "pending",
+      "id": 38
     }
   ]
 }

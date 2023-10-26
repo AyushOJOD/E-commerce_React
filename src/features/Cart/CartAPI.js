@@ -40,3 +40,18 @@ export function deleteItemFromCart(itemId) {
     resolve({ data: { id: itemId } });
   });
 }
+
+export async function resetCart(userId) {
+  try {
+    const response = await fetchItemsByUserId(userId); // Assuming fetchItemsByUserId returns a promise
+    const items = response.data;
+
+    for (let item of items) {
+      await deleteItemFromCart(item.id); // Assuming deleteItemFromCart returns a promise
+    }
+
+    return { status: "success" };
+  } catch (error) {
+    return { status: "error", message: error.message };
+  }
+}
