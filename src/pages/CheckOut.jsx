@@ -2,10 +2,11 @@ import React, { useState } from 'react'
 import Cart from '../features/Cart/Cart'
 import { useForm } from 'react-hook-form';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectLoggedInUser, updateUserAsync } from '../features/Auth/authSlice';
+import { updateUserAsync } from '../features/Auth/authSlice';
 import { createOrderAsync, selectCurrentOrder } from '../features/orders/orderSlice';
 import { selectItems } from "../features/Cart/CartSlice"
 import { Navigate } from 'react-router-dom';
+import { selectUserInfo } from '../features/User/userSlice';
 
 
 
@@ -20,7 +21,7 @@ const CheckOut = () => {
         formState: { errors },
     } = useForm()
 
-    const user = useSelector(selectLoggedInUser);
+    const user = useSelector(selectUserInfo);
     const dispatch = useDispatch();
     const items = useSelector(selectItems);
     const currentOrder = useSelector(selectCurrentOrder);
