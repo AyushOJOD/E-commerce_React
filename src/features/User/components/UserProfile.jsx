@@ -43,7 +43,6 @@ export default function UserProfile() {
     setShowAddAddressForm(false);
   }
 
-
   const {
     register,
     handleSubmit,
@@ -55,13 +54,17 @@ export default function UserProfile() {
   return (
     <div>
       <div className="bg-white mt-12 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="pt-8 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="pt-8 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col items-start">
           <h1 className="text-2xl font-bold leading-7 text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight">
             Name : {user.name ? user.name : "Guest User"}
           </h1>
-          <h3 className="text-sm font-mono leading-7 text-amber-800 sm:truncate sm:text-3xl sm:tracking-tight">
+          <h3 className="text-sm font-sans leading-7 text-amber-800 sm:truncate sm:text-xl sm:tracking-tight">
             Email address : {user.email}
           </h3>
+          {user.role === "admin" && <h3 className="text-sm font-sans leading-7 text-amber-800 sm:truncate sm:text-lg sm:tracking-tight">
+            Role : {user.role}
+          </h3>}
+
         </div>
 
 
@@ -259,7 +262,7 @@ export default function UserProfile() {
                   type="submit"
                   className="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
-                  Update Address
+                  Add Address
                 </button>
               </div>
             </div>
