@@ -4,8 +4,9 @@ import { RadioGroup } from '@headlessui/react'
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchProductByIdAsync, selectProductById } from '../ProductSlice';
 import { useParams } from 'react-router-dom';
-import { addToCartAsync } from '../../Cart/CartSlice';
+import { addToCartAsync, selectItems } from '../../Cart/CartSlice';
 import { selectLoggedInUser } from '../../Auth/authSlice'
+import { discountedPrice } from '../../../app/constants';
 
 
 const colors = [
@@ -44,13 +45,19 @@ export default function ProductDetails() {
     const dispatch = useDispatch();
     const user = useSelector(selectLoggedInUser);
     const params = useParams();
+    const items = useSelector(selectItems)
 
     const handleCart = (e) => {
         e.preventDefault();
-        const newItem = { ...product, quantity: 1, user: user.id }
-        delete newItem['id'];
+        if (items.findIndex(item => item.id === product.id) < 0) {
+            const newItem = { ...product, productId: product.id, quantity: 1, user: user.id }
+            delete newItem['id'];
+            dispatch(addToCartAsync(newItem))
+        }
+        else {
+            alert("Item Already exists!");
+        }
 
-        dispatch(addToCartAsync(newItem))
     }
 
     useEffect(() => {
@@ -134,7 +141,8 @@ export default function ProductDetails() {
                     {/* Options */}
                     <div className="mt-4 lg:row-span-3 lg:mt-0">
                         <h2 className="sr-only">Product information</h2>
-                        <p className="text-3xl tracking-tight text-gray-900">${product.price}</p>
+                        <p className="text-3xl tracking-tight line-through text-gray-900">${product.price}</p>
+                        <p className="text-3xl tracking-tight text-gray-900">${discountedPrice(product)}</p>
 
                         {/* Reviews */}
                         <div className="mt-6">

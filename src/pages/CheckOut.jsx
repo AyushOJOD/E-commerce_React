@@ -7,6 +7,7 @@ import { createOrderAsync, selectCurrentOrder } from '../features/orders/orderSl
 import { selectItems } from "../features/Cart/CartSlice"
 import { Navigate } from 'react-router-dom';
 import { selectUserInfo } from '../features/User/userSlice';
+import { discountedPrice } from '../app/constants';
 
 
 
@@ -28,7 +29,7 @@ const CheckOut = () => {
 
 
     const totalAmount = items.reduce((amount, item) => {
-        return item.price * item.quantity + amount;
+        return discountedPrice(item) * item.quantity + amount;
     }, 0);
 
     const totalItems = items.reduce((total, item) => item.quantity + total, 0);

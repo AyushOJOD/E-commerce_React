@@ -11,9 +11,9 @@ import { selectLoggedInUser } from '../Auth/authSlice'
 
 
 const navigation = [
-    { name: 'Dashboard', link: '#', current: true, user: true },
-    { name: 'Team', link: '#', current: false, user: true },
+    { name: 'Products', link: '/', current: true, user: true },
     { name: 'Admin', link: '/admin', current: false, admin: true },
+    { name: 'Orders', link: '/admin/orders', current: false, admin: true },
 ]
 const userNavigation = [
     { name: 'My Profile', link: '/profile' },
