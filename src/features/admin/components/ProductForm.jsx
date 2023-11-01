@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { clearSelectedProduct, createProductAsync, fetchProductByIdAsync, productSlice, selectBrands, selectCategories, selectProductById, updateProductAsync } from '../../product/ProductSlice';
 import { useForm } from 'react-hook-form';
 import { useParams } from 'react-router-dom';
+import { useState } from 'react';
+import Modal from '../../common/Modal';
 
 const ProductForm = () => {
 
@@ -19,6 +21,7 @@ const ProductForm = () => {
   const dispatch = useDispatch();
   const params = useParams();
   const selectedProduct = useSelector(selectProductById);
+  const [openModal, setOpenModal] = useState(false);
 
   useEffect(() => {
     if (params.id) {
@@ -77,12 +80,24 @@ const ProductForm = () => {
         }
       })}>
         <div className="space-y-12 bg-white p-12">
+          <Modal
+            title={`Delete ${selectedProduct.title}`}
+            message="Are you sure you want to delete this Product?"
+            dangerOption="Delete"
+            cancelOption="Cancel"
+            dangerAction={handleDelete}
+            cancelAction={() => setOpenModal(null)}
+            showModal={openModal}
+          ></Modal>
           <div className="border-b border-gray-900/10 pb-12">
             <h2 className="text-base font-semibold leading-7 text-gray-900">
               Add Product
             </h2>
 
+
+
             <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+              {selectedProduct.deleted && <h2 className='text-sm text-red-500'>This product is already deleted!</h2>}
               <div className="sm:col-span-6">
                 <label
                   htmlFor="title"
@@ -411,12 +426,12 @@ const ProductForm = () => {
             Cancel
           </button>
 
-          {selectedProduct && <button
-            onClick={handleDelete}
+          {selectedProduct && !selectedProduct.deleted && (<button
+            onClick={() => setOpenModal(true)}
             className="rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
             Delete
-          </button>}
+          </button>)}
 
           <button
             onClick={handleSubmit}

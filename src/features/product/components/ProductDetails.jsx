@@ -2,11 +2,13 @@ import { useEffect, useState } from 'react'
 import { StarIcon } from '@heroicons/react/20/solid'
 import { RadioGroup } from '@headlessui/react'
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchProductByIdAsync, selectProductById } from '../ProductSlice';
+import { fetchProductByIdAsync, selectProductById, selectProductListStatus } from '../ProductSlice';
 import { useParams } from 'react-router-dom';
 import { addToCartAsync, selectItems } from '../../Cart/CartSlice';
 import { selectLoggedInUser } from '../../Auth/authSlice'
 import { discountedPrice } from '../../../app/constants';
+import { useAlert } from "react-alert";
+import { Grid } from 'react-loader-spinner';
 
 
 const colors = [
@@ -45,20 +47,27 @@ export default function ProductDetails() {
     const dispatch = useDispatch();
     const user = useSelector(selectLoggedInUser);
     const params = useParams();
-    const items = useSelector(selectItems)
+    const items = useSelector(selectItems);
+    const alert = useAlert();
+    const status = useSelector(selectProductListStatus);
 
     const handleCart = (e) => {
         e.preventDefault();
-        if (items.findIndex(item => item.id === product.id) < 0) {
-            const newItem = { ...product, productId: product.id, quantity: 1, user: user.id }
+        if (items.findIndex((item) => item.productId === product.id) < 0) {
+            const newItem = {
+                ...product,
+                productId: product.id,
+                quantity: 1,
+                user: user.id,
+            };
             delete newItem['id'];
-            dispatch(addToCartAsync(newItem))
+            dispatch(addToCartAsync(newItem));
+            // TODO: it will be based on server response of backend
+            alert.success('Item added to Cart');
+        } else {
+            alert.error('Item Already added');
         }
-        else {
-            alert("Item Already exists!");
-        }
-
-    }
+    };
 
     useEffect(() => {
         dispatch(fetchProductByIdAsync(params.id));
@@ -68,6 +77,16 @@ export default function ProductDetails() {
 
     return (
         <div className="bg-white">
+            {status === 'loading' ? <Grid
+                height="80"
+                width="80"
+                color="#1f2937"
+                ariaLabel="grid-loading"
+                radius="12.5"
+                wrapperStyle={{}}
+                wrapperClass=""
+                visible={true}
+            /> : null}
             {product ? <div className="pt-6">
                 <nav aria-label="Breadcrumb">
                     <ol role="list" className="mx-auto flex max-w-2xl items-center space-x-2 px-4 sm:px-6 lg:max-w-7xl lg:px-8">

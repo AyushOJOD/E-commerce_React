@@ -68,9 +68,9 @@
         "https://i.dummyjson.com/data/products/4/1.jpg",
         "https://i.dummyjson.com/data/products/4/2.jpg",
         "https://i.dummyjson.com/data/products/4/3.jpg",
-        "https://i.dummyjson.com/data/products/4/4.jpg",
         "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
-      ]
+      ],
+      "deleted": true
     },
     {
       "id": 5,

@@ -16,9 +16,9 @@ const PageNotFound = () => {
                         >
                             Go back home
                         </Link>
-                        <a href="/contact" className="text-sm font-semibold text-gray-900">
+                        <Link to={'/contact-us'} className="text-sm font-semibold text-gray-900">
                             Contact support <span aria-hidden="true">&rarr;</span>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </main>

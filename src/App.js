@@ -23,6 +23,15 @@ import AdminHome from "./pages/AdminHome";
 import AdminProductDetailsPage from "./pages/AdminProductDetailsPage";
 import AdminProductFormPage from "./pages/AdminProductFormPage";
 import AdminOrdersPage from "./pages/AdminOrdersPage";
+import Emptycart from "./pages/Emptycart";
+import { positions, Provider } from "react-alert";
+import AlertTemplate from "react-alert-template-basic";
+import ContactUsPage from "./pages/ContactUsPage";
+
+const options = {
+  timeout: 5000,
+  position: positions.BOTTOM_CENTER,
+};
 
 const router = createBrowserRouter([
   {
@@ -40,6 +49,18 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <LoginPage />,
+  },
+  {
+    path: "/contact-us",
+    element: <ContactUsPage />,
+  },
+  {
+    path: "/cart",
+    element: <Protected children={<CartPage />} />,
+  },
+  {
+    path: "/cart/empty",
+    element: <Protected children={<Emptycart />} />,
   },
   {
     path: "/cart",
@@ -109,7 +130,9 @@ function App() {
 
   return (
     <div className="App">
-      <RouterProvider router={router} />
+      <Provider template={AlertTemplate} {...options}>
+        <RouterProvider router={router} />
+      </Provider>
     </div>
   );
 }

@@ -3,11 +3,14 @@ import { useDispatch, useSelector } from "react-redux";
 import { selectLoggedInUser } from "../../Auth/authSlice";
 import { updateUserAsync } from "../userSlice";
 import { useForm } from "react-hook-form";
+import { useAlert } from "react-alert";
+
 
 
 export default function UserProfile() {
   const dispatch = useDispatch();
   const user = useSelector(selectLoggedInUser);
+  const alert = useAlert();
 
   const [selectedEditIndex, setSelectedEditIndex] = useState(-1);
   const [showAddAddressForm, setShowAddAddressForm] = useState(false);
@@ -16,6 +19,7 @@ export default function UserProfile() {
     const newUser = { ...user, addresses: [...user.addresses] } // for shalllow copy isssue
     newUser.addresses.splice(index, 1);
     dispatch(updateUserAsync(newUser));
+    alert.success("Address deleted successfully!")
   }
 
   const handleEdit = (addressUpdate, index) => {
@@ -23,6 +27,7 @@ export default function UserProfile() {
     newUser.addresses.splice(index, 1, addressUpdate);
     dispatch(updateUserAsync(newUser));
     setSelectedEditIndex(-1);
+    alert.success("Address updated Successfully!")
   }
 
   const handleEditForm = (index) => {
@@ -41,6 +46,7 @@ export default function UserProfile() {
     const newUser = { ...user, addresses: [...user.addresses, address] }
     dispatch(updateUserAsync(newUser));
     setShowAddAddressForm(false);
+    alert.success("Address added successfully!")
   }
 
   const {

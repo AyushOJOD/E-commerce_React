@@ -6,12 +6,14 @@ import { Link, Navigate } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { selectItems } from '../Cart/CartSlice'
 import { selectLoggedInUser } from '../Auth/authSlice'
+import logo from "../../assets/logo.png"
 
 
 
 
 const navigation = [
     { name: 'Products', link: '/', current: true, user: true },
+    { name: 'Contact Us', link: '/contact-us', current: true, user: true },
     { name: 'Admin', link: '/admin', current: false, admin: true },
     { name: 'Orders', link: '/admin/orders', current: false, admin: true },
 ]
@@ -44,8 +46,8 @@ const Navbar = ({ content }) => {
                                         <div className="flex-shrink-0">
                                             <Link to="/">
                                                 <img
-                                                    className="h-8 w-8"
-                                                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                                                    className="h-14 w-14"
+                                                    src={logo}
                                                     alt="Your Company"
                                                 />
                                             </Link>
@@ -99,7 +101,7 @@ const Navbar = ({ content }) => {
                                                         <span className="sr-only">Open user menu</span>
                                                         <img
                                                             className="h-8 w-8 rounded-full"
-                                                            src={user.imageUrl}
+                                                            src='https://as1.ftcdn.net/v2/jpg/02/09/95/42/1000_F_209954204_mHCvAQBIXP7C2zRl5Fbs6MEWOEkaX3cA.jpg'
                                                             alt=""
                                                         />
                                                     </Menu.Button>
@@ -227,8 +229,8 @@ const Navbar = ({ content }) => {
 
                 <header className="bg-white shadow">
                     <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-                        <h1 className="text-3xl font-bold tracking-tight text-gray-900">
-                            E-Commerce
+                        <h1 className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 text-3xl font-semibold">
+                            Web Park
                         </h1>
                     </div>
                 </header>
