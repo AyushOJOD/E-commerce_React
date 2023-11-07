@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
@@ -39,7 +40,7 @@ const Footer = () => {
                             </p>
                             <div className="order-1 md:order-2">
                                 <span className="px-2"><a href="https://linktr.ee/AyushOJOD" target='_blank'>About us</a></span>
-                                <span className="px-2 border-l">Contact us</span>
+                                <Link className="px-2 border-l" to={'/contact-us'}>Contact us</Link>
                                 <span className="px-2 border-l">Privacy Policy</span>
                             </div>
                         </div>

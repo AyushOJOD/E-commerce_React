@@ -1,13 +1,4 @@
-export function fetchAllProducts() {
-  return new Promise(async (resolve) => {
-    // TODO: Change this server
-    const response = await fetch("http://localhost:8080/products");
-    const data = await response.json();
-    resolve({ data });
-  });
-}
-
-export function fetchProductsByFilters(filter, sort, pagination) {
+export function fetchProductsByFilters(filter, sort, pagination, admin) {
   // filter = { "category" : "Smartphone" }
   // pagination = {_page: 1, _limit=10}
   let queryString = ""; // This will go after the ?
@@ -26,6 +17,9 @@ export function fetchProductsByFilters(filter, sort, pagination) {
 
   for (let key in pagination) {
     queryString += `${key}=${pagination[key]}&`;
+  }
+  if (admin) {
+    queryString += `admin=true`;
   }
 
   return new Promise(async (resolve) => {

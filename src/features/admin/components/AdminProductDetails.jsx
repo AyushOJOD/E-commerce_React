@@ -50,7 +50,6 @@ export default function AdminProductDetails() {
         e.preventDefault();
         const newItem = { ...product, quantity: 1, user: user.id }
         delete newItem['id'];
-
         dispatch(addToCartAsync(newItem))
     }
 

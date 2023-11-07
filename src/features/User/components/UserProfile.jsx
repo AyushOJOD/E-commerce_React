@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { selectLoggedInUser } from "../../Auth/authSlice";
-import { updateUserAsync } from "../userSlice";
+import { selectUserInfo, updateUserAsync } from "../userSlice";
 import { useForm } from "react-hook-form";
 import { useAlert } from "react-alert";
 
@@ -9,21 +8,21 @@ import { useAlert } from "react-alert";
 
 export default function UserProfile() {
   const dispatch = useDispatch();
-  const user = useSelector(selectLoggedInUser);
+  const userInfo = useSelector(selectUserInfo);
   const alert = useAlert();
 
   const [selectedEditIndex, setSelectedEditIndex] = useState(-1);
   const [showAddAddressForm, setShowAddAddressForm] = useState(false);
 
   const handleRemove = (e, index) => {
-    const newUser = { ...user, addresses: [...user.addresses] } // for shalllow copy isssue
+    const newUser = { ...userInfo, addresses: [...userInfo.addresses] } // for shalllow copy isssue
     newUser.addresses.splice(index, 1);
     dispatch(updateUserAsync(newUser));
     alert.success("Address deleted successfully!")
   }
 
   const handleEdit = (addressUpdate, index) => {
-    const newUser = { ...user, addresses: [...user.addresses] } // for shalllow copy isssue
+    const newUser = { ...userInfo, addresses: [...userInfo.addresses] } // for shalllow copy isssue
     newUser.addresses.splice(index, 1, addressUpdate);
     dispatch(updateUserAsync(newUser));
     setSelectedEditIndex(-1);
@@ -32,7 +31,7 @@ export default function UserProfile() {
 
   const handleEditForm = (index) => {
     setSelectedEditIndex(index);
-    const address = user.addresses[index];
+    const address = userInfo.addresses[index];
     setValue('name', address.name);
     setValue('email', address.email);
     setValue('city', address.city);
@@ -43,7 +42,7 @@ export default function UserProfile() {
   }
 
   const handleAdd = (address) => {
-    const newUser = { ...user, addresses: [...user.addresses, address] }
+    const newUser = { ...userInfo, addresses: [...userInfo.addresses, address] }
     dispatch(updateUserAsync(newUser));
     setShowAddAddressForm(false);
     alert.success("Address added successfully!")
@@ -62,13 +61,13 @@ export default function UserProfile() {
       <div className="bg-white mt-12 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="pt-8 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col items-start">
           <h1 className="text-2xl font-bold leading-7 text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight">
-            Name : {user.name ? user.name : "Guest User"}
+            Name : {userInfo.name ? userInfo.name : "Guest User"}
           </h1>
           <h3 className="text-sm font-sans leading-7 text-amber-800 sm:truncate sm:text-xl sm:tracking-tight">
-            Email address : {user.email}
+            Email address : {userInfo.email}
           </h3>
-          {user.role === "admin" && <h3 className="text-sm font-sans leading-7 text-amber-800 sm:truncate sm:text-lg sm:tracking-tight">
-            Role : {user.role}
+          {userInfo.role === "admin" && <h3 className="text-sm font-sans leading-7 text-amber-800 sm:truncate sm:text-lg sm:tracking-tight">
+            Role : {userInfo.role}
           </h3>}
 
         </div>
@@ -273,7 +272,7 @@ export default function UserProfile() {
               </div>
             </div>
           </form> : null}
-          {user.addresses.map((address, index) =>
+          {userInfo.addresses.map((address, index) =>
             <div>
               {selectedEditIndex === index ? <form
                 className="bg-white px-5 py-12 mt-12"

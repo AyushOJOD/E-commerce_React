@@ -2,11 +2,10 @@ import React, { useState } from 'react'
 import Cart from '../features/Cart/Cart'
 import { useForm } from 'react-hook-form';
 import { useDispatch, useSelector } from 'react-redux';
-import { updateUserAsync } from '../features/Auth/authSlice';
 import { createOrderAsync, selectCurrentOrder } from '../features/orders/orderSlice';
 import { selectItems } from "../features/Cart/CartSlice"
 import { Navigate } from 'react-router-dom';
-import { selectUserInfo } from '../features/User/userSlice';
+import { selectUserInfo, updateUserAsync } from '../features/User/userSlice';
 import { discountedPrice } from '../app/constants';
 
 
@@ -29,7 +28,7 @@ const CheckOut = () => {
 
 
     const totalAmount = items.reduce((amount, item) => {
-        return discountedPrice(item) * item.quantity + amount;
+        return discountedPrice(item.product) * item.quantity + amount;
     }, 0);
 
     const totalItems = items.reduce((total, item) => item.quantity + total, 0);
@@ -52,7 +51,7 @@ const CheckOut = () => {
                 items,
                 totalAmount,
                 totalItems,
-                user,
+                user: user.id,
                 paymentMethod,
                 selectedAddress,
                 status: "pending" // Can be changed only by the admin
@@ -67,6 +66,8 @@ const CheckOut = () => {
         //TODO: clear cart after order
         //TODO: on server change the stock number of items
     }
+
+
 
     return (
         <>
@@ -199,7 +200,7 @@ const CheckOut = () => {
                                     <p className="text-gray-500">Choose from your prior addresses.</p>
 
                                     <ul role="list" className='space-y-4'>
-                                        {user.addresses?.map((address, index) => (
+                                        {user?.addresses.map((address, index) => (
                                             <li
                                                 key={index}
                                                 className=" flex justify-between gap-x-6 px-5 py-5 border-solid border-2 border-gray-200"

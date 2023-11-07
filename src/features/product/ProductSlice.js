@@ -1,7 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import {
   createProduct,
-  fetchAllProducts,
   fetchBrands,
   fetchCategories,
   fetchProductById,
@@ -18,19 +17,15 @@ const initialState = {
   totalItems: 0,
 };
 
-export const fetchAllProductsAsync = createAsyncThunk(
-  "product/fetchAllProducts", // Here we have defined the namespace and then a fuction to fetch all products.
-  async () => {
-    const response = await fetchAllProducts();
-    // The value we return becomes the `fulfilled` action payload
-    return response.data;
-  }
-);
-
 export const fetchProductsByFilterAsync = createAsyncThunk(
   "product/fetchProductsyByFilter", // Here we have defined the namespace and then a fuction to fetch all products.
-  async ({ filter, sort, pagination }) => {
-    const response = await fetchProductsByFilters(filter, sort, pagination);
+  async ({ filter, sort, pagination, admin }) => {
+    const response = await fetchProductsByFilters(
+      filter,
+      sort,
+      pagination,
+      admin
+    );
     // The value we return becomes the `fulfilled` action payload
     return response.data;
   }
@@ -66,6 +61,7 @@ export const fetchProductByIdAsync = createAsyncThunk(
   "product/fetchProductById",
   async (id) => {
     const response = await fetchProductById(id);
+    // The value we return becomes the `fulfilled` action payload
     return response.data;
   }
 );
@@ -81,7 +77,7 @@ export const updateProductAsync = createAsyncThunk(
 export const productSlice = createSlice({
   name: "product",
   initialState,
-  // The `reducers` field lets us define reducers and generate associated actions
+
   reducers: {
     clearSelectedProduct: (state) => {
       state.selectedProduct = null;
@@ -90,13 +86,6 @@ export const productSlice = createSlice({
 
   extraReducers: (builder) => {
     builder
-      .addCase(fetchAllProductsAsync.pending, (state) => {
-        state.status = "loading";
-      })
-      .addCase(fetchAllProductsAsync.fulfilled, (state, action) => {
-        state.status = "idle";
-        state.products = action.payload;
-      })
       .addCase(fetchProductsByFilterAsync.pending, (state) => {
         state.status = "loading";
       })
