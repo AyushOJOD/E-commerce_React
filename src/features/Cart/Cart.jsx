@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { useState } from "react";
 
 import { Link, Navigate } from "react-router-dom";
-import { deleteItemAsync, selectCartStatus, selectItems, updateCartAsync } from "./CartSlice";
+import { deleteItemAsync, selectCartLoaded, selectCartStatus, selectItems, updateCartAsync } from "./CartSlice";
 import { discountedPrice } from "../../app/constants";
 import { Grid } from "react-loader-spinner";
 import Modal from "../common/Modal";
@@ -15,6 +15,7 @@ export default function Cart({ whereto, btn, onClick }) {
   const [open, setOpen] = useState(true);
   const items = useSelector(selectItems);
   const status = useSelector(selectCartStatus);
+  const cartLoaded = useSelector(selectCartLoaded)
   const [openModal, setOpenModal] = useState(false);
 
   const totalAmount = items.reduce((amount, item) => {
@@ -34,7 +35,7 @@ export default function Cart({ whereto, btn, onClick }) {
 
   return (
     <>
-      {!items.length && <Navigate to={'/cart/empty'} replace={true} />}
+      {!items.length && cartLoaded && <Navigate to={'/cart/empty'} replace={true} />}
       <div className="bg-white mt-12 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="pt-8 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold leading-7 text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight">
@@ -42,16 +43,7 @@ export default function Cart({ whereto, btn, onClick }) {
           </h2>
           <div className="flow-root">
             <ul role="list" className="-my-6 divide-y divide-gray-200 py-4">
-              {status === 'loading' ? <Grid
-                height="80"
-                width="80"
-                color="#1f2937"
-                ariaLabel="grid-loading"
-                radius="12.5"
-                wrapperStyle={{}}
-                wrapperClass=""
-                visible={true}
-              /> : null}
+
               {items.map((item) => (
                 <li key={item.id} className="flex py-6">
                   <div className="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200">

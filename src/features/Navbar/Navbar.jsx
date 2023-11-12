@@ -5,8 +5,9 @@ import { Bars3Icon, ShoppingCartIcon, XMarkIcon } from '@heroicons/react/24/outl
 import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { selectItems } from '../Cart/CartSlice'
-import { selectLoggedInUser } from '../Auth/authSlice'
 import logo from "../../assets/logo.png"
+import { selectUserInfo } from '../User/userSlice'
+import Loader from '../common/Loader'
 
 
 
@@ -32,11 +33,14 @@ function classNames(...classes) {
 const Navbar = ({ content }) => {
 
     const items = useSelector(selectItems);
-    const user = useSelector(selectLoggedInUser);
+    const userInfo = useSelector(selectUserInfo);
 
     return (
         <>
-            <div className="min-h-full">
+            {
+                !userInfo && <Loader />
+            }
+            {userInfo && <div className="min-h-full">
                 <Disclosure as="nav" className="bg-gray-800">
                     {({ open }) => (
                         <>
@@ -55,7 +59,7 @@ const Navbar = ({ content }) => {
                                         <div className="hidden md:block">
                                             <div className="ml-10 flex items-baseline space-x-4">
                                                 {navigation.map((item) =>
-                                                    item[user.role] ? (
+                                                    item[userInfo.role] ? (
                                                         <Link
                                                             key={item.name}
                                                             to={item.link}
@@ -180,16 +184,16 @@ const Navbar = ({ content }) => {
                                         <div className="flex-shrink-0">
                                             <img
                                                 className="h-10 w-10 rounded-full"
-                                                src={user.imageUrl}
+                                                src={userInfo.imageUrl}
                                                 alt=""
                                             />
                                         </div>
                                         <div className="ml-3">
                                             <div className="text-base font-medium leading-none text-white">
-                                                {user.name}
+                                                {userInfo.name}
                                             </div>
                                             <div className="text-sm font-medium leading-none text-gray-400">
-                                                {user.email}
+                                                {userInfo.email}
                                             </div>
                                         </div>
                                         <Link to="/cart">
@@ -239,7 +243,7 @@ const Navbar = ({ content }) => {
                         {content}
                     </div>
                 </main>
-            </div>
+            </div>}
         </>
     )
 }

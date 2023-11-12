@@ -9,7 +9,11 @@ import CheckOut from "./pages/CheckOut";
 import ProductDeatilsPage from "./pages/ProductDeatilsPage";
 import Protected from "./features/Auth/components/Protected";
 import { useDispatch, useSelector } from "react-redux";
-import { selectLoggedInUser } from "./features/Auth/authSlice";
+import {
+  checkAuthAsync,
+  selectLoggedInUser,
+  selectUserChecked,
+} from "./features/Auth/authSlice";
 import { fetchItemsByUserIdAsync } from "./features/Cart/CartSlice";
 import PageNotFound from "./pages/404";
 import OrderSuccess from "./pages/OrderSuccess";
@@ -120,19 +124,23 @@ const router = createBrowserRouter([
 function App() {
   const dispatch = useDispatch();
   const user = useSelector(selectLoggedInUser);
+  const userChecked = useSelector(selectUserChecked);
 
   useEffect(() => {
+    dispatch(checkAuthAsync());
     if (user) {
-      dispatch(fetchItemsByUserIdAsync(user.id));
-      dispatch(fetchLoggedInUserAsync(user.id));
+      dispatch(fetchItemsByUserIdAsync());
+      dispatch(fetchLoggedInUserAsync());
     }
   }, [dispatch, user]);
 
   return (
     <div className="App">
-      <Provider template={AlertTemplate} {...options}>
-        <RouterProvider router={router} />
-      </Provider>
+      {userChecked && (
+        <Provider template={AlertTemplate} {...options}>
+          <RouterProvider router={router} />
+        </Provider>
+      )}
     </div>
   );
 }

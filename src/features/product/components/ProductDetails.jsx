@@ -5,7 +5,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchProductByIdAsync, selectProductById, selectProductListStatus } from '../ProductSlice';
 import { useParams } from 'react-router-dom';
 import { addToCartAsync, selectItems } from '../../Cart/CartSlice';
-import { selectLoggedInUser } from '../../Auth/authSlice'
 import { discountedPrice } from '../../../app/constants';
 import { useAlert } from "react-alert";
 import { Grid } from 'react-loader-spinner';
@@ -45,7 +44,6 @@ export default function ProductDetails() {
     const [selectedSize, setSelectedSize] = useState(sizes[2]);
     const product = useSelector(selectProductById);
     const dispatch = useDispatch();
-    const user = useSelector(selectLoggedInUser);
     const params = useParams();
     const items = useSelector(selectItems);
     const alert = useAlert();
@@ -56,8 +54,7 @@ export default function ProductDetails() {
         if (items.findIndex((item) => item.product.id === product.id) < 0) {
             const newItem = {
                 product: product.id,
-                quantity: 1,
-                user: user.id,
+                quantity: 1
             };
             dispatch(addToCartAsync(newItem));
             // TODO: it will be based on server response of backend
