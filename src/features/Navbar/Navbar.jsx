@@ -7,7 +7,6 @@ import { useSelector } from 'react-redux'
 import { selectItems } from '../Cart/CartSlice'
 import logo from "../../assets/logo.png"
 import { selectUserInfo } from '../User/userSlice'
-import Loader from '../common/Loader'
 
 
 
