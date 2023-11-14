@@ -37,7 +37,7 @@ export default function SignUp() {
                             email: data.email,
                             password: data.password,
                             addresses: [],
-                            role: 'admin', // TODO: we will give this role in the backend
+                            role: 'user', // TODO: we will give this role in the backend
                         })))}>
                         <div>
                             <label htmlFor="email" className="flex text-sm font-medium leading-6 text-gray-900">
