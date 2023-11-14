@@ -39,6 +39,7 @@ const ProductList = () => {
   const [filter, setFilter] = useState({});
   const [sort, setSort] = useState({});
   const [page, setPage] = useState(1);
+  const [search, setSearch] = useState("");
   const status = useSelector(selectProductListStatus);
 
   const filters = [
@@ -100,7 +101,35 @@ const ProductList = () => {
   return (
     <div className="bg-white">
 
-      <div>
+      <div className="flex flex-col items-center">
+        <>
+          {/* Search  */}
+          <div className="flex mx-auto max-w-md mt-5">
+            <div className="self-center mr-2 text-lg">Search</div>
+            <form className="relative mx-auto w-max">
+              <input onChange={(e) => setSearch(e.target.value)}
+                type="search"
+                className="peer cursor-pointer relative z-10 h-12 w-12 rounded-full border bg-transparent pl-12 outline-none focus:w-full focus:cursor-text focus:border-[#1f2937] focus:pl-16 focus:pr-4"
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="absolute inset-y-0 my-auto h-8 w-12 border-r border-transparent stroke-gray-500 px-3.5 peer-focus:border-[#1f2937] peer-focus:stroke-[#1f2937]"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+            </form>
+          </div>
+
+        </>
+
         {/* Mobile filter dialog */}
         <MobileFilters handleFilter={handleFilter} mobileFiltersOpen={mobileFiltersOpen} setMobileFiltersOpen={setMobileFiltersOpen} filters={filters} />
 
@@ -157,13 +186,7 @@ const ProductList = () => {
                 </Transition>
               </Menu>
 
-              <button
-                type="button"
-                className="-m-2 ml-5 p-2 text-gray-400 hover:text-gray-500 sm:ml-7"
-              >
-                <span className="sr-only">View grid</span>
-                <Squares2X2Icon className="h-5 w-5" aria-hidden="true" />
-              </button>
+
               <button
                 type="button"
                 className="-m-2 ml-4 p-2 text-gray-400 hover:text-gray-500 sm:ml-6 lg:hidden"
@@ -186,7 +209,7 @@ const ProductList = () => {
               {/* Product grid */}
               <div className="lg:col-span-3">
                 {/*Products Section*/}
-                <ProductGrid products={products} status={status} />
+                <ProductGrid products={products} status={status} search={search} />
               </div>
             </div>
           </section>
@@ -387,7 +410,7 @@ function DesktopFilters({ handleFilter, filters }) {
 }
 
 
-function ProductGrid({ products, status }) {
+function ProductGrid({ products, status, search }) {
   return (
     <div>
       <div>
@@ -406,7 +429,9 @@ function ProductGrid({ products, status }) {
                   wrapperClass=""
                   visible={true}
                 /> : null}
-                {products.map((product, index) => (
+                {products.filter((product) => {
+                  return search.toLowerCase() === " " ? product : (product.title.toLowerCase().includes(search))
+                }).map((product, index) => (
                   <Link to={`/product-detail/${product.id}`}
                     key={product.id}
                   >
@@ -466,6 +491,7 @@ function ProductGrid({ products, status }) {
     </div>
   )
 }
+
 
 
 export default ProductList

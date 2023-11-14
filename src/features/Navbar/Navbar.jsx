@@ -20,7 +20,7 @@ const navigation = [
 ]
 const userNavigation = [
     { name: 'My Profile', link: '/profile' },
-    { name: 'My Orders', link: '/orders' },
+    { name: 'My Orders', link: '/my-orders' },
     { name: 'Sign out', link: '/logout' },
 ]
 
@@ -37,9 +37,7 @@ const Navbar = ({ content }) => {
 
     return (
         <>
-            {
-                !userInfo && <Loader />
-            }
+
             {userInfo && <div className="min-h-full">
                 <Disclosure as="nav" className="bg-gray-800">
                     {({ open }) => (
@@ -58,7 +56,7 @@ const Navbar = ({ content }) => {
                                         </div>
                                         <div className="hidden md:block">
                                             <div className="ml-10 flex items-baseline space-x-4">
-                                                {navigation.map((item) =>
+                                                {userInfo && navigation.map((item) =>
                                                     item[userInfo.role] ? (
                                                         <Link
                                                             key={item.name}
@@ -141,6 +139,8 @@ const Navbar = ({ content }) => {
                                         </div>
                                     </div>
                                     <div className="-mr-2 flex md:hidden">
+
+
                                         {/* Mobile menu button */}
                                         <Disclosure.Button className="inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                                             <span className="sr-only">Open main menu</span>
@@ -239,7 +239,7 @@ const Navbar = ({ content }) => {
                     </div>
                 </header>
                 <main>
-                    <div className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+                    <div className="mx-auto  py-6 sm:px-6 lg:px-8">
                         {content}
                     </div>
                 </main>

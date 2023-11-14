@@ -107,4 +107,6 @@ export const selectError = (state) => state.auth.error;
 
 export const selectUserChecked = (state) => state.auth.userChecked;
 
+export const selectAuthState = (state) => state.auth.status;
+
 export default userSlice.reducer;

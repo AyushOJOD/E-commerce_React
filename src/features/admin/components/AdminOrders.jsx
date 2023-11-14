@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { ITEMS_PER_PAGE, discountedPrice } from '../../../app/constants';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchAllOrdersAsync, selectOrders, selectTotalOrders } from '../../orders/orderSlice';
+import { fetchAllOrdersAsync, selectOrders, selectTotalOrders, updateOrderAsync } from '../../orders/orderSlice';
 import { EyeIcon, PencilIcon, ArrowDownIcon, ArrowUpIcon } from '@heroicons/react/24/outline'
-import { updateCartAsync } from '../../Cart/CartSlice';
 import Pagination from '../../common/Pagination';
 
 const AdminOrders = () => {
@@ -26,11 +25,10 @@ const AdminOrders = () => {
     }
 
     const handleUpdate = (e, order) => {
-        const updatedOrder = { ...order, status: e.target.value }
-        dispatch(updateCartAsync(updatedOrder));
+        const updatedOrder = { ...order, status: e.target.value };
+        dispatch(updateOrderAsync(updatedOrder));
         setEditableOrderId(-1);
-    }
-
+    };
     const handlePage = (page) => {
         setPage(page);
 
@@ -61,9 +59,9 @@ const AdminOrders = () => {
         const pagination = { _page: page, _limit: ITEMS_PER_PAGE }
         dispatch(fetchAllOrdersAsync({ pagination, sort }));
     }, [dispatch, page, sort]);
+
+
     return (
-
-
         <div>
             <div className="overflow-x-auto">
                 <div className=" flex items-center justify-center bg-gray-100 font-sans overflow-hidden">
@@ -95,7 +93,7 @@ const AdminOrders = () => {
                                                 <div className="flex items-center">
                                                     <div className="mr-2">
                                                         <img
-                                                            className="w-6 h-6 rounded-full"
+                                                            className="w-14 h-14 rounded-full"
                                                             src={item.product.thumbnail}
                                                             alt={item.product.title}
                                                         />
@@ -123,7 +121,7 @@ const AdminOrders = () => {
                                         </td>
                                         <td className="py-3 px-6 text-center">
                                             {order.id === editableOrderId ?
-                                                <select onChange={e => handleUpdate(e, order)}>
+                                                <select value={order.status} onChange={e => handleUpdate(e, order)}>
                                                     <option value="pending">Pending</option>
                                                     <option value="dispatched">Dispatched</option>
                                                     <option value="delivered">Delivered</option>

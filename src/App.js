@@ -31,6 +31,7 @@ import Emptycart from "./pages/Emptycart";
 import { positions, Provider } from "react-alert";
 import AlertTemplate from "react-alert-template-basic";
 import ContactUsPage from "./pages/ContactUsPage";
+import StripeCheckOut from "./pages/StripeCheckOut";
 
 const options = {
   timeout: 5000,
@@ -99,7 +100,11 @@ const router = createBrowserRouter([
     element: <OrderSuccess />,
   },
   {
-    path: "/orders",
+    path: "/stripe-checkout/",
+    element: <Protected children={<StripeCheckOut />} />,
+  },
+  {
+    path: "/my-orders",
     element: <UserOrdersPage />,
   },
   {

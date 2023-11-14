@@ -9,7 +9,6 @@ import {
   FunnelIcon,
   MinusIcon,
   PlusIcon,
-  Squares2X2Icon,
   ChevronLeftIcon,
   ChevronRightIcon,
   StarIcon
@@ -39,6 +38,7 @@ const AdminProductList = () => {
   const [filter, setFilter] = useState({});
   const [sort, setSort] = useState({});
   const [page, setPage] = useState(1);
+  const [search, setSearch] = useState(" ");
 
 
   const filters = [
@@ -99,7 +99,35 @@ const AdminProductList = () => {
 
   return (
     <div className="bg-white">
-      <div>
+      <div className="flex flex-col items-center">
+
+        <>
+          {/* Search  */}
+          <div className="flex mx-auto max-w-md mt-5">
+            <div className="self-center mr-2 text-lg">Search</div>
+            <form className="relative mx-auto w-max">
+              <input onChange={(e) => setSearch(e.target.value)}
+                type="search"
+                className="peer cursor-pointer relative z-10 h-12 w-12 rounded-full border bg-transparent pl-12 outline-none focus:w-full focus:cursor-text focus:border-[#1f2937] focus:pl-16 focus:pr-4"
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="absolute inset-y-0 my-auto h-8 w-12 border-r border-transparent stroke-gray-500 px-3.5 peer-focus:border-[#1f2937] peer-focus:stroke-[#1f2937]"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+            </form>
+          </div>
+
+        </>
         {/* Mobile filter dialog */}
         <MobileFilters handleFilter={handleFilter} mobileFiltersOpen={mobileFiltersOpen} setMobileFiltersOpen={setMobileFiltersOpen} filters={filters} />
 
@@ -112,7 +140,7 @@ const AdminProductList = () => {
             <div className="flex items-center">
               <Menu as="div" className="relative inline-block text-left">
                 <div>
-                  <Menu.Button className="group inline-flex justify-center text-sm font-medium text-gray-700 hover:text-gray-900">
+                  <Menu.Button className="group inline-flex font-bold justify-center text-sm text-gray-700 hover:text-gray-900">
                     Sort
                     <ChevronDownIcon
                       className="-mr-1 ml-1 h-5 w-5 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
@@ -156,13 +184,7 @@ const AdminProductList = () => {
                 </Transition>
               </Menu>
 
-              <button
-                type="button"
-                className="-m-2 ml-5 p-2 text-gray-400 hover:text-gray-500 sm:ml-7"
-              >
-                <span className="sr-only">View grid</span>
-                <Squares2X2Icon className="h-5 w-5" aria-hidden="true" />
-              </button>
+
               <button
                 type="button"
                 className="-m-2 ml-4 p-2 text-gray-400 hover:text-gray-500 sm:ml-6 lg:hidden"
@@ -193,7 +215,7 @@ const AdminProductList = () => {
                   </Link>
                 </div>
                 {/*Products Section*/}
-                <ProductGrid products={products} />
+                <ProductGrid products={products} search={search} />
               </div>
             </div>
           </section>
@@ -445,7 +467,7 @@ function Pagination({ page, setPage, handlePage, totalItems }) {
               (el, index) => {
                 return (
                   <div
-                    onClick={(e) => handlePage(page < totalPages ? page + 1 : page)}
+                    onClick={(e) => handlePage(index + 1)}
                     aria-current="page"
                     className={`relative cursor-pointer z-10 inline-flex items-center ${index + 1 === page
                       ? 'bg-indigo-600 text-white'
@@ -471,7 +493,7 @@ function Pagination({ page, setPage, handlePage, totalItems }) {
     </div>
   );
 }
-function ProductGrid({ products }) {
+function ProductGrid({ products, search }) {
   return (
     <div>
       <div>
@@ -481,7 +503,9 @@ function ProductGrid({ products }) {
 
               <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
 
-                {products.map((product, index) => (
+                {products.filter((product) => {
+                  return search.toLowerCase() === " " ? product : product.title.toLowerCase().includes(search)
+                }).map((product, index) => (
                   <div className="flex flex-col">
                     <Link to={`/product-detail/${product.id}`}
                       key={product.id}

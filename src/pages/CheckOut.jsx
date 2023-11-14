@@ -71,7 +71,8 @@ const CheckOut = () => {
 
     return (
         <>
-            {currentOrder && <Navigate to={`/order-success/${currentOrder.id}`} replace={true} />}
+            {currentOrder && currentOrder.paymentMethod === 'cash' && <Navigate to={`/order-success/${currentOrder.id}`} replace={true} />}
+            {currentOrder && currentOrder.paymentMethod === 'card' && <Navigate to={`/stripe-checkout/`} replace={true} />}
             <div className='grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-5'>
                 <div className='lg:col-span-3'>
                     <form noValidate className='px-4 pb-3' onSubmit={handleSubmit((data) => { dispatch(updateUserAsync({ ...user, addresses: [...user.addresses, data] })); reset(); }
@@ -266,7 +267,7 @@ const CheckOut = () => {
                                                 className="cursor-pointer h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
                                             />
                                             <label htmlFor="cash" className="block text-sm font-medium leading-6 text-gray-900">
-                                                Cash on Delivery
+                                                Cash
                                             </label>
                                         </div>
                                     </div>
