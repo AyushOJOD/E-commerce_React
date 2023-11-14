@@ -4,7 +4,7 @@ import { selectLoggedInUser } from '../authSlice'
 import { Navigate } from 'react-router-dom';
 import { selectUserInfo } from '../../User/userSlice';
 
-const Protected = ({ children }) => {
+const ProtectedAdmin = ({ children }) => {
 
     const user = useSelector(selectLoggedInUser);
     const userInfo = useSelector(selectUserInfo);
@@ -20,4 +20,4 @@ const Protected = ({ children }) => {
     )
 }
 
-export default Protected
+export default ProtectedAdmin
