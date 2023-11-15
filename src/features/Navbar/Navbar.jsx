@@ -132,6 +132,7 @@ const Navbar = ({ content }) => {
                                                                 )}
                                                             </Menu.Item>
                                                         ))}
+
                                                     </Menu.Items>
                                                 </Transition>
                                             </Menu>
