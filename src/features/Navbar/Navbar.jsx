@@ -164,8 +164,8 @@ const Navbar = ({ content }) => {
                                     {navigation.map((item) => (
                                         <Disclosure.Button
                                             key={item.name}
-                                            as="a"
-                                            href={item.href}
+                                            as={Link}
+                                            to={item.link}
                                             className={classNames(
                                                 item.current
                                                     ? 'bg-gray-900 text-white'
@@ -216,8 +216,8 @@ const Navbar = ({ content }) => {
                                         {userNavigation.map((item) => (
                                             <Disclosure.Button
                                                 key={item.name}
-                                                as="a"
-                                                link={item.href}
+                                                as={Link}
+                                                to={item.link}
                                                 className="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white"
                                             >
                                                 {item.name}
