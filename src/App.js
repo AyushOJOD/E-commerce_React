@@ -151,5 +151,3 @@ function App() {
 }
 
 export default App;
-
-// TODO: Make a contact page in the backend part

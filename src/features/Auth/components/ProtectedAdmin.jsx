@@ -12,12 +12,14 @@ const ProtectedAdmin = ({ children }) => {
     if (!user) {
         return <Navigate to={'/login'} replace={true} />
     }
-    if (!user && userInfo.role != 'admin') {
+    if (userInfo && user.role !== 'admin') {
         return <Navigate to={'/'} replace={true} />
     }
-    return (
-        children
-    )
+    else {
+        return (
+            children
+        )
+    }
 }
 
 export default ProtectedAdmin

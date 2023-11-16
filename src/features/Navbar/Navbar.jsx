@@ -6,17 +6,18 @@ import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { selectItems } from '../Cart/CartSlice'
 import logo from "../../assets/logo.png"
-import { selectUserInfo } from '../User/userSlice'
+import { selectLoggedInUser } from '../Auth/authSlice'
 
 
 
 
 const navigation = [
-    { name: 'Products', link: '/', current: true, user: true },
-    { name: 'Contact Us', link: '/contact-us', current: true, user: true },
-    { name: 'Admin', link: '/admin', current: false, admin: true },
-    { name: 'Orders', link: '/admin/orders', current: false, admin: true },
-]
+    { name: 'Products', link: '/', current: true, user: true, admin: true },
+    { name: 'Contact Us', link: '/contact-us', current: true, user: true, admin: true },
+    { name: 'Admin', link: '/admin', current: true, admin: true },
+    { name: 'Orders', link: '/admin/orders', current: true, admin: true },
+];
+
 const userNavigation = [
     { name: 'My Profile', link: '/profile' },
     { name: 'My Orders', link: '/my-orders' },
@@ -32,11 +33,11 @@ function classNames(...classes) {
 const Navbar = ({ content }) => {
 
     const items = useSelector(selectItems);
-    const userInfo = useSelector(selectUserInfo);
+    const userInfo = useSelector(selectLoggedInUser);
+
 
     return (
         <>
-
             {userInfo && <div className="min-h-full">
                 <Disclosure as="nav" className="bg-gray-800">
                     {({ open }) => (
@@ -163,21 +164,24 @@ const Navbar = ({ content }) => {
                             <Disclosure.Panel className="md:hidden">
                                 <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
                                     {navigation.map((item) => (
-                                        <Disclosure.Button
-                                            key={item.name}
-                                            as={Link}
-                                            to={item.link}
-                                            className={classNames(
-                                                item.current
-                                                    ? 'bg-gray-900 text-white'
-                                                    : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                                                'block rounded-md px-3 py-2 text-base font-medium'
-                                            )}
-                                            aria-current={item.current ? 'page' : undefined}
-                                        >
-                                            {item.name}
-                                        </Disclosure.Button>
+                                        item[userInfo.role] && (
+                                            <Disclosure.Button
+                                                key={item.name}
+                                                as={Link}
+                                                to={item.link}
+                                                className={classNames(
+                                                    item.current
+                                                        ? 'bg-gray-900 text-white'
+                                                        : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                                    'block rounded-md px-3 py-2 text-base font-medium'
+                                                )}
+                                                aria-current={item.current ? 'page' : undefined}
+                                            >
+                                                {item.name}
+                                            </Disclosure.Button>
+                                        )
                                     ))}
+
                                 </div>
                                 <div className="border-t border-gray-700 pb-3 pt-4">
                                     <div className="flex items-center px-5">
