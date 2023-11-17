@@ -22,8 +22,7 @@ export function fetchAllOrders(pagination, sort) {
   }
 
   return new Promise(async (resolve) => {
-    // TODO: Change this server
-    const response = await fetch("/orders?" + queryString);
+    const response = await fetch("/orders/adminOnly/?" + queryString);
     const data = await response.json();
     const totalOrders = response.headers.get("X-Total-Count");
     resolve({ data: { orders: data, totalOrders: +totalOrders } });

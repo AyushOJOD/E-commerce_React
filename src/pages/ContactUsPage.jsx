@@ -1,6 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import { selectLoggedInUser } from '../features/Auth/authSlice'
+import { selectLoggedInUser } from '../features/Auth/authSlice';
+
 
 const ContactUsPage = () => {
 
