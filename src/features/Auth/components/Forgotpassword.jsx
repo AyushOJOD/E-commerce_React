@@ -2,9 +2,15 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Link, Navigate } from "react-router-dom";
 import { useForm } from "react-hook-form"
+import logo from "../../../assets/logo.png"
+import { resetPasswordRequestAsync, selectmailSent } from "../authSlice";
+import { useAlert } from "react-alert";
+
 
 export default function ForgotPassword() {
     const dispatch = useDispatch();
+    const mailSent = useSelector(selectmailSent);
+    const alert = useAlert();
 
     const {
         register,
@@ -17,9 +23,9 @@ export default function ForgotPassword() {
             <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
                 <div className="sm:mx-auto sm:w-full sm:max-w-sm">
                     <img
-                        className="mx-auto h-10 w-auto"
-                        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                        alt="Your Company"
+                        className="mx-auto h-14 w-14"
+                        src={logo}
+                        alt="Web-Park"
                     />
                     <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
                         Enter email to reset Password
@@ -27,7 +33,10 @@ export default function ForgotPassword() {
                 </div>
 
                 <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-                    <form noValidate className="space-y-6" action="#" method="POST" onSubmit={handleSubmit((data) => console.log(data))}>
+                    <form noValidate className="space-y-6" action="#" method="POST" onSubmit={handleSubmit((data) => {
+                        console.log(data);
+                        dispatch(resetPasswordRequestAsync(data.email));
+                    })}>
                         <div>
                             <label htmlFor="email" className="flex text-sm font-medium leading-6 text-gray-900">
                                 Email address
@@ -43,7 +52,9 @@ export default function ForgotPassword() {
                                     })}
                                     type="email"
                                     className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                                />                            </div>
+                                />
+                                {mailSent && <p className="text-red-700">Mail sent.</p>}
+                            </div>
                         </div>
 
 
@@ -65,6 +76,8 @@ export default function ForgotPassword() {
                     </p>
                 </div>
             </div>
+
         </div>
+
     );
 }

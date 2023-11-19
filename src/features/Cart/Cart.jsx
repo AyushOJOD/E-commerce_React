@@ -76,7 +76,7 @@ export default function Cart({ whereto, btn, onClick }) {
 
                       <div className="flex">
                         <Modal
-                          title={`Delete ${item.title}`}
+                          title={`Delete item`}  // TODO: make this item as item.title
                           message="Are you sure you want to delete this Cart item ?"
                           dangerOption="Delete"
                           cancelOption="Cancel"

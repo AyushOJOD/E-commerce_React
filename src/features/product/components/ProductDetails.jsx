@@ -57,7 +57,6 @@ export default function ProductDetails() {
                 quantity: 1
             };
             dispatch(addToCartAsync(newItem));
-            // TODO: it will be based on server response of backend
             alert.success('Item added to Cart');
         } else {
             alert.error('Item Already added');
